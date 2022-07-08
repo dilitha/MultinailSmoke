@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LayoutRoot>
+  <RootPanel Orientation="Horizontal">
+    <LayoutAnchorablePane>
+      <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="600" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Batches" IsSelected="True" ContentId="Pane1" CanClose="False" LastActivationTimeStamp="03/31/2022 10:46:42" />
+    </LayoutAnchorablePane>
+    <LayoutAnchorablePane Id="6a5d9f6c-63fb-4a33-a0ac-4a5e0798d160" />
+    <LayoutAnchorablePane Id="c3068b2d-1e52-4d75-99cf-f4d4804a24fd" />
+    <LayoutAnchorablePane Id="84f626ff-d834-4397-a6fe-bbefb1bdd654" />
+    <LayoutAnchorablePane Id="250bc488-719c-4dc9-ac96-69b5a7664838" />
+    <LayoutAnchorablePane Id="96c046fc-7166-4eca-9846-dda4970540c6" />
+  </RootPanel>
+  <TopSide />
+  <RightSide>
+    <LayoutAnchorGroup>
+      <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="1200" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Jobs" ContentId="RightSide1" CanClose="False" CanFloat="False" LastActivationTimeStamp="03/30/2022 12:03:35" />
+    </LayoutAnchorGroup>
+    <LayoutAnchorGroup>
+      <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="1263" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Stock" ContentId="RightSide2" CanClose="False" CanFloat="False" LastActivationTimeStamp="03/30/2022 11:59:36" />
+    </LayoutAnchorGroup>
+    <LayoutAnchorGroup Id="e41412ef-fc93-45da-93c6-bb8720f44ab5" />
+    <LayoutAnchorGroup Id="ba9031d4-73af-4d11-be23-4a1b3570c00e" />
+    <LayoutAnchorGroup Id="7eaa7982-e42a-44a8-838c-23ac54b2fe7e" />
+    <LayoutAnchorGroup Id="0926b248-a486-4cfd-9053-6466f5c7341f" />
+  </RightSide>
+  <LeftSide />
+  <BottomSide />
+  <FloatingWindows />
+  <Hidden>
+    <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="600" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Pane2" IsSelected="True" ContentId="Pane2" CanClose="False" LastActivationTimeStamp="03/31/2022 10:46:17" PreviousContainerId="6a5d9f6c-63fb-4a33-a0ac-4a5e0798d160" PreviousContainerIndex="0" />
+    <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="600" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Pane3" IsSelected="True" ContentId="Pane3" CanClose="False" LastActivationTimeStamp="03/31/2022 10:46:17" PreviousContainerId="c3068b2d-1e52-4d75-99cf-f4d4804a24fd" PreviousContainerIndex="0" />
+    <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="600" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Pane4" IsSelected="True" ContentId="Pane4" CanClose="False" LastActivationTimeStamp="03/31/2022 10:46:17" PreviousContainerId="84f626ff-d834-4397-a6fe-bbefb1bdd654" PreviousContainerIndex="0" />
+    <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="600" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Pane5" IsSelected="True" ContentId="Pane5" CanClose="False" LastActivationTimeStamp="03/31/2022 10:46:17" PreviousContainerId="250bc488-719c-4dc9-ac96-69b5a7664838" PreviousContainerIndex="0" />
+    <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="600" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Pane6" IsSelected="True" ContentId="Pane6" CanClose="False" LastActivationTimeStamp="03/31/2022 10:46:17" PreviousContainerId="96c046fc-7166-4eca-9846-dda4970540c6" PreviousContainerIndex="0" />
+    <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="1200" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="RightSide3" IsSelected="True" ContentId="RightSide3" CanClose="False" CanFloat="False" LastActivationTimeStamp="03/31/2022 10:46:17" PreviousContainerId="e41412ef-fc93-45da-93c6-bb8720f44ab5" PreviousContainerIndex="0" />
+    <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="1200" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="RightSide4" IsSelected="True" ContentId="RightSide4" CanClose="False" CanFloat="False" LastActivationTimeStamp="03/31/2022 10:46:17" PreviousContainerId="ba9031d4-73af-4d11-be23-4a1b3570c00e" PreviousContainerIndex="0" />
+    <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="1200" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="RightSide5" IsSelected="True" ContentId="RightSide5" CanClose="False" CanFloat="False" LastActivationTimeStamp="03/31/2022 10:46:17" PreviousContainerId="7eaa7982-e42a-44a8-838c-23ac54b2fe7e" PreviousContainerIndex="0" />
+    <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="1200" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="RightSide6" IsSelected="True" ContentId="RightSide6" CanClose="False" CanFloat="False" LastActivationTimeStamp="03/31/2022 10:46:17" PreviousContainerId="0926b248-a486-4cfd-9053-6466f5c7341f" PreviousContainerIndex="0" />
+  </Hidden>
+</LayoutRoot>

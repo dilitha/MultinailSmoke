@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XijetPrinterSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Config>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Config</DisplayName>
+    <IsHidden>false</IsHidden>
+    <PrinterEnable>
+      <Value>true</Value>
+      <Description>Enable Printer</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </PrinterEnable>
+    <PrinterToReferenceDistance>
+      <Value>450</Value>
+      <Description>Printer To Reference Sensor Distance</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Editable>true</Editable>
+    </PrinterToReferenceDistance>
+    <PrinterToDeckDistance>
+      <Value>450</Value>
+      <Description>Printer Bottom To Deck Distance</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Editable>true</Editable>
+    </PrinterToDeckDistance>
+    <MaxPrintLength>
+      <Value>6000</Value>
+      <Description>Maximum Allowable Stick Length for Printing</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Editable>true</Editable>
+    </MaxPrintLength>
+    <PrintDark>
+      <Value>true</Value>
+      <Description>Enable Darker Printing</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </PrintDark>
+  </Config>
+  <Content>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Content</DisplayName>
+    <IsHidden>false</IsHidden>
+    <PrintMemberLength>
+      <Value>true</Value>
+      <Description>Print Member Length</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </PrintMemberLength>
+    <PrintJobName>
+      <Value>true</Value>
+      <Description>Print Job Name</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </PrintJobName>
+    <PrintOnTailEndOfMembers>
+      <Value>false</Value>
+      <Description>Print On Tail End Of Members</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </PrintOnTailEndOfMembers>
+    <PrintMemberQuantity>
+      <Value>false</Value>
+      <Description>Print Member Quantity</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </PrintMemberQuantity>
+    <PrintPanelName>
+      <Value>true</Value>
+      <Description>Print Panel Name</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </PrintPanelName>
+    <PrintMemberName>
+      <Value>true</Value>
+      <Description>Print Member Name</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </PrintMemberName>
+    <PrintMemberStackOrder>
+      <Value>false</Value>
+      <Description>Print Member Stack Order</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </PrintMemberStackOrder>
+    <PrintMemberJunctions>
+      <Value>false</Value>
+      <Description>Print Member Junctions</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </PrintMemberJunctions>
+    <ExcludeMemberJunctionsStartingWith>
+      <Value>cs,st,ss</Value>
+      <Description>Exclude Member Junctions Starting With</Description>
+      <Editable>true</Editable>
+    </ExcludeMemberJunctionsStartingWith>
+    <PrintMemberOpenings>
+      <Value>false</Value>
+      <Description>Print Member Openings</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </PrintMemberOpenings>
+    <UsePluginForLabelling>
+      <Value>false</Value>
+      <Description>Use Plugin For Labelling</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </UsePluginForLabelling>
+    <PluginLabelDelimiter>
+      <Value>-</Value>
+      <Description>Plugin Label Field Delimiter</Description>
+      <Editable>true</Editable>
+    </PluginLabelDelimiter>
+  </Content>
+</XijetPrinterSettings>

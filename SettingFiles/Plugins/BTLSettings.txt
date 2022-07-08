@@ -1,0 +1,18 @@
+Boolean|JobLoading|Enable Job Data Loading||True|||
+Boolean|Reporting|Enable Job Data Reporting||True|||
+Option|Compatibility|Job Data Loading Compatibility||V1.8|||V1.8,V1.9
+Option|DataInterest|Reporting Data Interest of this Machine||SAW|||SAW,FRAME
+Boolean|IgnoreComposites|Ignore Composite Data Elements||True|||
+String|IgnoreDesignations|Ignore Part Designations||Sheathing|||
+String|LabelSpecification|Member Labelling Specification||Annotation|||
+Option|FrameDrawingPlane|Select Preferred Frame Drawing Plane||XY|||XY,XZ,YZ,ALL
+Option|FrameTransform|Select Preferred Frame Transform||MATRIX|||LONGHAND,MATRIX
+Boolean|InterpretMemberRoles|Interpret Member Roles for Host||True|||
+Boolean|LapJointAsBirdsmouth|Treat Lap Joint as Birdsmouth||True|||
+String|PluginName|Name of the Plug-in||BTL File Data Loader|||
+String|PluginVersion|Data File Version supported by Plug-in||SOLE|||
+String|PluginAPIVersionDEV|MNM Plug-in API Version (Development)||1.0.5.0|||
+String|PluginAPIVersionRT|MNM Plug-in API Version (Runtime)||1.0.4.0|||
+String|PluginExtension|Plug-in Data File Extension||BTL|||
+String|PluginCallSign|Plug-in Call Sign||BTL|||
+String|PluginAuthor|Author||Multinail Australia 2021|||

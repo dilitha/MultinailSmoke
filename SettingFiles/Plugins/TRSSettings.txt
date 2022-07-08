@@ -1,0 +1,12 @@
+String|GradeDesignations|Member Grade Designations|||||
+String|SpecieDesignations|Member Specie Designations|||||
+Boolean|JobLoading|Enable Job Data Loading||True|||
+Boolean|Reporting|Enable Job Data Reporting||True|||
+Boolean|InterpretMemberRoles|Interpret Member Roles for Host||True|||
+String|PluginName|Name of the Plug-in||TRS Alpine Saw File Loader|||
+String|PluginVersion|Data File Version supported by Plug-in||2.0  3.0|||
+String|PluginAPIVersionDEV|MNM Plug-in API Version (Development)||1.2.0.0|||
+String|PluginAPIVersionRT|MNM Plug-in API Version (Runtime)||1.0.4.0|||
+String|PluginExtension|Plug-in Data File Extension||TRS|||
+String|PluginCallSign|Plug-in CallSign||TRS|||
+String|PluginAuthor|Author||Multinail Australia 2019|||

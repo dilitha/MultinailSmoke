@@ -1,0 +1,2640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PieceMakerMachineSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Communications>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Communications</DisplayName>
+    <IsHidden>false</IsHidden>
+    <PLCIPAddress>
+      <Value>192.168.250.1</Value>
+      <Description>PLC IP Address</Description>
+      <Group>Communications</Group>
+      <Editable>true</Editable>
+    </PLCIPAddress>
+    <PLCIPLocalPort>
+      <Value>2</Value>
+      <Description>PLC Local Port</Description>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Communications</Group>
+      <Editable>true</Editable>
+    </PLCIPLocalPort>
+    <PLCCommsRetries>
+      <Value>5</Value>
+      <Description>PLC Comms Retries</Description>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Communications</Group>
+      <Editable>true</Editable>
+    </PLCCommsRetries>
+    <PLCCommsTimeout>
+      <Value>1000</Value>
+      <Description>PLC Comms Timeout</Description>
+      <Units>ms</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Communications</Group>
+      <Editable>true</Editable>
+    </PLCCommsTimeout>
+    <PLCCommsCycleTime>
+      <Value>250</Value>
+      <Description>PLC Comms Cycle Time</Description>
+      <Units>ms</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Communications</Group>
+      <Editable>true</Editable>
+    </PLCCommsCycleTime>
+  </Communications>
+  <Servos>
+    <ServoDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Infeed Roller Servo</DisplayName>
+      <TagName>Infeed.RollerServo.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DefaultVelocity>
+        <Value>100</Value>
+        <Description>Default Velocity</Description>
+        <Units>mm/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </DefaultVelocity>
+      <DefaultAcceleration>
+        <Value>100</Value>
+        <Description>Default Acceleration</Description>
+        <Units>mm/s/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </DefaultAcceleration>
+      <DefaultJerk>
+        <Value>0</Value>
+        <Description>Default Jerk</Description>
+        <Units>mm/s/s/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </DefaultJerk>
+      <MinimumPosition>
+        <Value>0</Value>
+        <Description>Minimum Position</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </MinimumPosition>
+      <MaximumPosition>
+        <Value>0</Value>
+        <Description>Maximum Position</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </MaximumPosition>
+      <HomeVelocity>
+        <Value>10</Value>
+        <Description>Home Velocity</Description>
+        <Units>mm/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </HomeVelocity>
+      <HomeOffset>
+        <Value>0</Value>
+        <Description>Home Offset</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </HomeOffset>
+      <FollowingErrorLimit>
+        <Value>0</Value>
+        <Description>Following Error Limit</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </FollowingErrorLimit>
+      <TorqueLimit>
+        <Value>0</Value>
+        <Description>Torque Limit</Description>
+        <Units>%</Units>
+        <Min>0</Min>
+        <Max>300</Max>
+        <Editable>true</Editable>
+      </TorqueLimit>
+      <CalibrationRatio>
+        <Value>0</Value>
+        <Description>Calibration Ratio</Description>
+        <Units>mm/rev</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </CalibrationRatio>
+    </ServoDevSettings>
+    <ServoDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Outfeed Roller Servo</DisplayName>
+      <TagName>Outfeed.RollerServo.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DefaultVelocity>
+        <Value>100</Value>
+        <Description>Default Velocity</Description>
+        <Units>mm/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </DefaultVelocity>
+      <DefaultAcceleration>
+        <Value>100</Value>
+        <Description>Default Acceleration</Description>
+        <Units>mm/s/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </DefaultAcceleration>
+      <DefaultJerk>
+        <Value>0</Value>
+        <Description>Default Jerk</Description>
+        <Units>mm/s/s/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </DefaultJerk>
+      <MinimumPosition>
+        <Value>0</Value>
+        <Description>Minimum Position</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </MinimumPosition>
+      <MaximumPosition>
+        <Value>0</Value>
+        <Description>Maximum Position</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </MaximumPosition>
+      <HomeVelocity>
+        <Value>10</Value>
+        <Description>Home Velocity</Description>
+        <Units>mm/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </HomeVelocity>
+      <HomeOffset>
+        <Value>0</Value>
+        <Description>Home Offset</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </HomeOffset>
+      <FollowingErrorLimit>
+        <Value>0</Value>
+        <Description>Following Error Limit</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </FollowingErrorLimit>
+      <TorqueLimit>
+        <Value>0</Value>
+        <Description>Torque Limit</Description>
+        <Units>%</Units>
+        <Min>0</Min>
+        <Max>300</Max>
+        <Editable>true</Editable>
+      </TorqueLimit>
+      <CalibrationRatio>
+        <Value>0</Value>
+        <Description>Calibration Ratio</Description>
+        <Units>mm/rev</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </CalibrationRatio>
+    </ServoDevSettings>
+    <ServoDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Saw Horizontal Servo</DisplayName>
+      <TagName>Saw.HorizontalServo.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DefaultVelocity>
+        <Value>100</Value>
+        <Description>Default Velocity</Description>
+        <Units>mm/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </DefaultVelocity>
+      <DefaultAcceleration>
+        <Value>100</Value>
+        <Description>Default Acceleration</Description>
+        <Units>mm/s/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </DefaultAcceleration>
+      <DefaultJerk>
+        <Value>0</Value>
+        <Description>Default Jerk</Description>
+        <Units>mm/s/s/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </DefaultJerk>
+      <MinimumPosition>
+        <Value>0</Value>
+        <Description>Minimum Position</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </MinimumPosition>
+      <MaximumPosition>
+        <Value>0</Value>
+        <Description>Maximum Position</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </MaximumPosition>
+      <HomeVelocity>
+        <Value>10</Value>
+        <Description>Home Velocity</Description>
+        <Units>mm/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </HomeVelocity>
+      <HomeOffset>
+        <Value>0</Value>
+        <Description>Home Offset</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </HomeOffset>
+      <FollowingErrorLimit>
+        <Value>0</Value>
+        <Description>Following Error Limit</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </FollowingErrorLimit>
+      <TorqueLimit>
+        <Value>0</Value>
+        <Description>Torque Limit</Description>
+        <Units>%</Units>
+        <Min>0</Min>
+        <Max>300</Max>
+        <Editable>true</Editable>
+      </TorqueLimit>
+      <CalibrationRatio>
+        <Value>0</Value>
+        <Description>Calibration Ratio</Description>
+        <Units>mm/rev</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </CalibrationRatio>
+    </ServoDevSettings>
+    <ServoDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Saw Vertical Servo</DisplayName>
+      <TagName>Saw.VerticalServo.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DefaultVelocity>
+        <Value>100</Value>
+        <Description>Default Velocity</Description>
+        <Units>mm/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </DefaultVelocity>
+      <DefaultAcceleration>
+        <Value>100</Value>
+        <Description>Default Acceleration</Description>
+        <Units>mm/s/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </DefaultAcceleration>
+      <DefaultJerk>
+        <Value>0</Value>
+        <Description>Default Jerk</Description>
+        <Units>mm/s/s/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </DefaultJerk>
+      <MinimumPosition>
+        <Value>0</Value>
+        <Description>Minimum Position</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </MinimumPosition>
+      <MaximumPosition>
+        <Value>0</Value>
+        <Description>Maximum Position</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </MaximumPosition>
+      <HomeVelocity>
+        <Value>10</Value>
+        <Description>Home Velocity</Description>
+        <Units>mm/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </HomeVelocity>
+      <HomeOffset>
+        <Value>0</Value>
+        <Description>Home Offset</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </HomeOffset>
+      <FollowingErrorLimit>
+        <Value>0</Value>
+        <Description>Following Error Limit</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </FollowingErrorLimit>
+      <TorqueLimit>
+        <Value>0</Value>
+        <Description>Torque Limit</Description>
+        <Units>%</Units>
+        <Min>0</Min>
+        <Max>300</Max>
+        <Editable>true</Editable>
+      </TorqueLimit>
+      <CalibrationRatio>
+        <Value>0</Value>
+        <Description>Calibration Ratio</Description>
+        <Units>mm/rev</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </CalibrationRatio>
+    </ServoDevSettings>
+    <ServoDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Saw Angle Servo</DisplayName>
+      <TagName>Saw.AngleServo.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DefaultVelocity>
+        <Value>100</Value>
+        <Description>Default Velocity</Description>
+        <Units>deg/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </DefaultVelocity>
+      <DefaultAcceleration>
+        <Value>100</Value>
+        <Description>Default Acceleration</Description>
+        <Units>deg/s/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </DefaultAcceleration>
+      <DefaultJerk>
+        <Value>0</Value>
+        <Description>Default Jerk</Description>
+        <Units>mm/s/s/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </DefaultJerk>
+      <MinimumPosition>
+        <Value>0</Value>
+        <Description>Minimum Position</Description>
+        <Units>deg</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </MinimumPosition>
+      <MaximumPosition>
+        <Value>0</Value>
+        <Description>Maximum Position</Description>
+        <Units>deg</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </MaximumPosition>
+      <HomeVelocity>
+        <Value>10</Value>
+        <Description>Home Velocity</Description>
+        <Units>deg/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </HomeVelocity>
+      <HomeOffset>
+        <Value>0</Value>
+        <Description>Home Offset</Description>
+        <Units>deg</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </HomeOffset>
+      <FollowingErrorLimit>
+        <Value>0</Value>
+        <Description>Following Error Limit</Description>
+        <Units>deg</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </FollowingErrorLimit>
+      <TorqueLimit>
+        <Value>0</Value>
+        <Description>Torque Limit</Description>
+        <Units>%</Units>
+        <Min>0</Min>
+        <Max>300</Max>
+        <Editable>true</Editable>
+      </TorqueLimit>
+      <CalibrationRatio>
+        <Value>0</Value>
+        <Description>Calibration Ratio</Description>
+        <Units>mm/rev</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </CalibrationRatio>
+    </ServoDevSettings>
+    <ServoDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Saw Tilt Servo</DisplayName>
+      <TagName>Saw.TiltServo.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DefaultVelocity>
+        <Value>100</Value>
+        <Description>Default Velocity</Description>
+        <Units>deg/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </DefaultVelocity>
+      <DefaultAcceleration>
+        <Value>100</Value>
+        <Description>Default Acceleration</Description>
+        <Units>deg/s/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </DefaultAcceleration>
+      <DefaultJerk>
+        <Value>0</Value>
+        <Description>Default Jerk</Description>
+        <Units>mm/s/s/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </DefaultJerk>
+      <MinimumPosition>
+        <Value>0</Value>
+        <Description>Minimum Position</Description>
+        <Units>deg</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </MinimumPosition>
+      <MaximumPosition>
+        <Value>0</Value>
+        <Description>Maximum Position</Description>
+        <Units>deg</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </MaximumPosition>
+      <HomeVelocity>
+        <Value>10</Value>
+        <Description>Home Velocity</Description>
+        <Units>deg/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </HomeVelocity>
+      <HomeOffset>
+        <Value>0</Value>
+        <Description>Home Offset</Description>
+        <Units>deg</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </HomeOffset>
+      <FollowingErrorLimit>
+        <Value>0</Value>
+        <Description>Following Error Limit</Description>
+        <Units>deg</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </FollowingErrorLimit>
+      <TorqueLimit>
+        <Value>0</Value>
+        <Description>Torque Limit</Description>
+        <Units>%</Units>
+        <Min>0</Min>
+        <Max>300</Max>
+        <Editable>true</Editable>
+      </TorqueLimit>
+      <CalibrationRatio>
+        <Value>0</Value>
+        <Description>Calibration Ratio</Description>
+        <Units>mm/rev</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </CalibrationRatio>
+    </ServoDevSettings>
+    <ServoDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Saw Blade Servo</DisplayName>
+      <TagName>Saw.BladeServo.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DefaultVelocity>
+        <Value>100</Value>
+        <Description>Default Velocity</Description>
+        <Units>rpm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </DefaultVelocity>
+      <DefaultAcceleration>
+        <Value>100</Value>
+        <Description>Default Acceleration</Description>
+        <Units>rpm/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </DefaultAcceleration>
+      <DefaultJerk>
+        <Value>0</Value>
+        <Description>Default Jerk</Description>
+        <Units>mm/s/s/s</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </DefaultJerk>
+      <MinimumPosition>
+        <Value>0</Value>
+        <Description>Minimum Position</Description>
+        <Units />
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </MinimumPosition>
+      <MaximumPosition>
+        <Value>0</Value>
+        <Description>Maximum Position</Description>
+        <Units />
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </MaximumPosition>
+      <HomeVelocity>
+        <Value>10</Value>
+        <Description>Home Velocity</Description>
+        <Units />
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </HomeVelocity>
+      <HomeOffset>
+        <Value>0</Value>
+        <Description>Home Offset</Description>
+        <Units />
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </HomeOffset>
+      <FollowingErrorLimit>
+        <Value>0</Value>
+        <Description>Following Error Limit</Description>
+        <Units />
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </FollowingErrorLimit>
+      <TorqueLimit>
+        <Value>0</Value>
+        <Description>Torque Limit</Description>
+        <Units>%</Units>
+        <Min>0</Min>
+        <Max>300</Max>
+        <Editable>true</Editable>
+      </TorqueLimit>
+      <CalibrationRatio>
+        <Value>0</Value>
+        <Description>Calibration Ratio</Description>
+        <Units>mm/rev</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </CalibrationRatio>
+    </ServoDevSettings>
+  </Servos>
+  <Drives>
+    <DriveDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>InDeck Chains Drive</DisplayName>
+      <TagName>InDeck.ChainsDrive.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DefaultAcceleration>
+        <Value>5000</Value>
+        <Description>Default Acceleration Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>60000</Max>
+        <Editable>true</Editable>
+      </DefaultAcceleration>
+      <DefaultDeceleration>
+        <Value>5000</Value>
+        <Description>Default Deceleration Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>60000</Max>
+        <Editable>true</Editable>
+      </DefaultDeceleration>
+      <DefaultSpeed>
+        <Value>100</Value>
+        <Description>Default Speed</Description>
+        <Units>%</Units>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Editable>true</Editable>
+      </DefaultSpeed>
+      <MaxFrequency>
+        <Value>50</Value>
+        <Description>Max Frequency</Description>
+        <Units>Hz</Units>
+        <Min>1</Min>
+        <Max>120</Max>
+        <Editable>true</Editable>
+      </MaxFrequency>
+      <ReverseDirection>
+        <Value>false</Value>
+        <Description>Reverse Direction</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ReverseDirection>
+    </DriveDevSettings>
+    <DriveDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>InDeck Feed Roller Drive</DisplayName>
+      <TagName>InDeck.FeedRollerDrive.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DefaultAcceleration>
+        <Value>5000</Value>
+        <Description>Default Acceleration Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>60000</Max>
+        <Editable>true</Editable>
+      </DefaultAcceleration>
+      <DefaultDeceleration>
+        <Value>5000</Value>
+        <Description>Default Deceleration Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>60000</Max>
+        <Editable>true</Editable>
+      </DefaultDeceleration>
+      <DefaultSpeed>
+        <Value>100</Value>
+        <Description>Default Speed</Description>
+        <Units>%</Units>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Editable>true</Editable>
+      </DefaultSpeed>
+      <MaxFrequency>
+        <Value>50</Value>
+        <Description>Max Frequency</Description>
+        <Units>Hz</Units>
+        <Min>1</Min>
+        <Max>120</Max>
+        <Editable>true</Editable>
+      </MaxFrequency>
+      <ReverseDirection>
+        <Value>false</Value>
+        <Description>Reverse Direction</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ReverseDirection>
+    </DriveDevSettings>
+    <DriveDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>OutDeck Rollers Drive</DisplayName>
+      <TagName>OutDeck.RollersDrive.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DefaultAcceleration>
+        <Value>5000</Value>
+        <Description>Default Acceleration Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>60000</Max>
+        <Editable>true</Editable>
+      </DefaultAcceleration>
+      <DefaultDeceleration>
+        <Value>5000</Value>
+        <Description>Default Deceleration Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>60000</Max>
+        <Editable>true</Editable>
+      </DefaultDeceleration>
+      <DefaultSpeed>
+        <Value>100</Value>
+        <Description>Default Speed</Description>
+        <Units>%</Units>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Editable>true</Editable>
+      </DefaultSpeed>
+      <MaxFrequency>
+        <Value>50</Value>
+        <Description>Max Frequency</Description>
+        <Units>Hz</Units>
+        <Min>1</Min>
+        <Max>120</Max>
+        <Editable>true</Editable>
+      </MaxFrequency>
+      <ReverseDirection>
+        <Value>false</Value>
+        <Description>Reverse Direction</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ReverseDirection>
+    </DriveDevSettings>
+    <DriveDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Waste Conveyor Drive</DisplayName>
+      <TagName>Waste.ConveyorDrive.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DefaultAcceleration>
+        <Value>5000</Value>
+        <Description>Default Acceleration Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>60000</Max>
+        <Editable>true</Editable>
+      </DefaultAcceleration>
+      <DefaultDeceleration>
+        <Value>5000</Value>
+        <Description>Default Deceleration Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>60000</Max>
+        <Editable>true</Editable>
+      </DefaultDeceleration>
+      <DefaultSpeed>
+        <Value>100</Value>
+        <Description>Default Speed</Description>
+        <Units>%</Units>
+        <Min>0</Min>
+        <Max>100</Max>
+        <Editable>true</Editable>
+      </DefaultSpeed>
+      <MaxFrequency>
+        <Value>50</Value>
+        <Description>Max Frequency</Description>
+        <Units>Hz</Units>
+        <Min>1</Min>
+        <Max>120</Max>
+        <Editable>true</Editable>
+      </MaxFrequency>
+      <ReverseDirection>
+        <Value>false</Value>
+        <Description>Reverse Direction</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ReverseDirection>
+    </DriveDevSettings>
+  </Drives>
+  <AirCylinders>
+    <AirCylinderDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>InDeck Supports Cylinder</DisplayName>
+      <TagName>InDeck.DeckSupportsCylinder.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <ExtendTime>
+        <Value>500</Value>
+        <Description>Max Extend Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </ExtendTime>
+      <RetractTime>
+        <Value>500</Value>
+        <Description>Max Retract Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </RetractTime>
+      <OutputPulseTime>
+        <Value>100</Value>
+        <Description>Output Pulse Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>10000</Max>
+        <Editable>true</Editable>
+      </OutputPulseTime>
+      <HasExtendLimit>
+        <Value>true</Value>
+        <Description>Has Extended Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasExtendLimit>
+      <HasRetractLimit>
+        <Value>true</Value>
+        <Description>Has Retracted Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasRetractLimit>
+    </AirCylinderDevSettings>
+    <AirCylinderDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>InDeck Feed Roller Cylinder</DisplayName>
+      <TagName>InDeck.FeedRollerCylinder.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <ExtendTime>
+        <Value>500</Value>
+        <Description>Max Extend Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </ExtendTime>
+      <RetractTime>
+        <Value>500</Value>
+        <Description>Max Retract Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </RetractTime>
+      <OutputPulseTime>
+        <Value>100</Value>
+        <Description>Output Pulse Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>10000</Max>
+        <Editable>true</Editable>
+      </OutputPulseTime>
+      <HasExtendLimit>
+        <Value>true</Value>
+        <Description>Has Extended Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasExtendLimit>
+      <HasRetractLimit>
+        <Value>true</Value>
+        <Description>Has Retracted Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasRetractLimit>
+    </AirCylinderDevSettings>
+    <AirCylinderDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Infeed Inner Guide Short Cylinder</DisplayName>
+      <TagName>Infeed.InnerGuideShortCylinder.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <ExtendTime>
+        <Value>500</Value>
+        <Description>Max Extend Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </ExtendTime>
+      <RetractTime>
+        <Value>500</Value>
+        <Description>Max Retract Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </RetractTime>
+      <OutputPulseTime>
+        <Value>100</Value>
+        <Description>Output Pulse Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>10000</Max>
+        <Editable>true</Editable>
+      </OutputPulseTime>
+      <HasExtendLimit>
+        <Value>true</Value>
+        <Description>Has Extended Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasExtendLimit>
+      <HasRetractLimit>
+        <Value>true</Value>
+        <Description>Has Retracted Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasRetractLimit>
+    </AirCylinderDevSettings>
+    <AirCylinderDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Infeed Inner Guide Long Cylinder</DisplayName>
+      <TagName>Infeed.InnerGuideLongCylinder.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <ExtendTime>
+        <Value>500</Value>
+        <Description>Max Extend Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </ExtendTime>
+      <RetractTime>
+        <Value>500</Value>
+        <Description>Max Retract Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </RetractTime>
+      <OutputPulseTime>
+        <Value>100</Value>
+        <Description>Output Pulse Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>10000</Max>
+        <Editable>true</Editable>
+      </OutputPulseTime>
+      <HasExtendLimit>
+        <Value>true</Value>
+        <Description>Has Extended Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasExtendLimit>
+      <HasRetractLimit>
+        <Value>true</Value>
+        <Description>Has Retracted Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasRetractLimit>
+    </AirCylinderDevSettings>
+    <AirCylinderDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Infeed Outer Guide Short Cylinder</DisplayName>
+      <TagName>Infeed.OuterGuideShortCylinder.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <ExtendTime>
+        <Value>500</Value>
+        <Description>Max Extend Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </ExtendTime>
+      <RetractTime>
+        <Value>500</Value>
+        <Description>Max Retract Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </RetractTime>
+      <OutputPulseTime>
+        <Value>100</Value>
+        <Description>Output Pulse Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>10000</Max>
+        <Editable>true</Editable>
+      </OutputPulseTime>
+      <HasExtendLimit>
+        <Value>true</Value>
+        <Description>Has Extended Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasExtendLimit>
+      <HasRetractLimit>
+        <Value>true</Value>
+        <Description>Has Retracted Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasRetractLimit>
+    </AirCylinderDevSettings>
+    <AirCylinderDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Infeed Outer Guide Long Cylinder</DisplayName>
+      <TagName>Infeed.OuterGuideLongCylinder.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <ExtendTime>
+        <Value>500</Value>
+        <Description>Max Extend Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </ExtendTime>
+      <RetractTime>
+        <Value>500</Value>
+        <Description>Max Retract Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </RetractTime>
+      <OutputPulseTime>
+        <Value>100</Value>
+        <Description>Output Pulse Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>10000</Max>
+        <Editable>true</Editable>
+      </OutputPulseTime>
+      <HasExtendLimit>
+        <Value>true</Value>
+        <Description>Has Extended Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasExtendLimit>
+      <HasRetractLimit>
+        <Value>true</Value>
+        <Description>Has Retracted Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasRetractLimit>
+    </AirCylinderDevSettings>
+    <AirCylinderDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Infeed Inner Clamp Cylinder</DisplayName>
+      <TagName>Infeed.InnerClampCylinder.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <ExtendTime>
+        <Value>500</Value>
+        <Description>Max Extend Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </ExtendTime>
+      <RetractTime>
+        <Value>500</Value>
+        <Description>Max Retract Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </RetractTime>
+      <OutputPulseTime>
+        <Value>100</Value>
+        <Description>Output Pulse Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>10000</Max>
+        <Editable>true</Editable>
+      </OutputPulseTime>
+      <HasExtendLimit>
+        <Value>true</Value>
+        <Description>Has Extended Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasExtendLimit>
+      <HasRetractLimit>
+        <Value>true</Value>
+        <Description>Has Retracted Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasRetractLimit>
+    </AirCylinderDevSettings>
+    <AirCylinderDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Infeed Outer Clamp Cylinder</DisplayName>
+      <TagName>Infeed.OuterClampCylinder.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <ExtendTime>
+        <Value>500</Value>
+        <Description>Max Extend Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </ExtendTime>
+      <RetractTime>
+        <Value>500</Value>
+        <Description>Max Retract Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </RetractTime>
+      <OutputPulseTime>
+        <Value>100</Value>
+        <Description>Output Pulse Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>10000</Max>
+        <Editable>true</Editable>
+      </OutputPulseTime>
+      <HasExtendLimit>
+        <Value>true</Value>
+        <Description>Has Extended Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasExtendLimit>
+      <HasRetractLimit>
+        <Value>true</Value>
+        <Description>Has Retracted Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasRetractLimit>
+    </AirCylinderDevSettings>
+    <AirCylinderDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Outfeed Inner Guide Short Cylinder</DisplayName>
+      <TagName>Outfeed.InnerGuideShortCylinder.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <ExtendTime>
+        <Value>500</Value>
+        <Description>Max Extend Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </ExtendTime>
+      <RetractTime>
+        <Value>500</Value>
+        <Description>Max Retract Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </RetractTime>
+      <OutputPulseTime>
+        <Value>100</Value>
+        <Description>Output Pulse Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>10000</Max>
+        <Editable>true</Editable>
+      </OutputPulseTime>
+      <HasExtendLimit>
+        <Value>true</Value>
+        <Description>Has Extended Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasExtendLimit>
+      <HasRetractLimit>
+        <Value>true</Value>
+        <Description>Has Retracted Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasRetractLimit>
+    </AirCylinderDevSettings>
+    <AirCylinderDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Outfeed Inner Guide Long Cylinder</DisplayName>
+      <TagName>Outfeed.InnerGuideLongCylinder.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <ExtendTime>
+        <Value>500</Value>
+        <Description>Max Extend Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </ExtendTime>
+      <RetractTime>
+        <Value>500</Value>
+        <Description>Max Retract Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </RetractTime>
+      <OutputPulseTime>
+        <Value>100</Value>
+        <Description>Output Pulse Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>10000</Max>
+        <Editable>true</Editable>
+      </OutputPulseTime>
+      <HasExtendLimit>
+        <Value>true</Value>
+        <Description>Has Extended Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasExtendLimit>
+      <HasRetractLimit>
+        <Value>true</Value>
+        <Description>Has Retracted Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasRetractLimit>
+    </AirCylinderDevSettings>
+    <AirCylinderDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Outfeed Outer Guide Short Cylinder</DisplayName>
+      <TagName>Outfeed.OuterGuideShortCylinder.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <ExtendTime>
+        <Value>500</Value>
+        <Description>Max Extend Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </ExtendTime>
+      <RetractTime>
+        <Value>500</Value>
+        <Description>Max Retract Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </RetractTime>
+      <OutputPulseTime>
+        <Value>100</Value>
+        <Description>Output Pulse Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>10000</Max>
+        <Editable>true</Editable>
+      </OutputPulseTime>
+      <HasExtendLimit>
+        <Value>true</Value>
+        <Description>Has Extended Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasExtendLimit>
+      <HasRetractLimit>
+        <Value>true</Value>
+        <Description>Has Retracted Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasRetractLimit>
+    </AirCylinderDevSettings>
+    <AirCylinderDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Outfeed Outer Guide Long Cylinder</DisplayName>
+      <TagName>Outfeed.OuterGuideLongCylinder.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <ExtendTime>
+        <Value>500</Value>
+        <Description>Max Extend Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </ExtendTime>
+      <RetractTime>
+        <Value>500</Value>
+        <Description>Max Retract Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </RetractTime>
+      <OutputPulseTime>
+        <Value>100</Value>
+        <Description>Output Pulse Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>10000</Max>
+        <Editable>true</Editable>
+      </OutputPulseTime>
+      <HasExtendLimit>
+        <Value>true</Value>
+        <Description>Has Extended Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasExtendLimit>
+      <HasRetractLimit>
+        <Value>true</Value>
+        <Description>Has Retracted Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasRetractLimit>
+    </AirCylinderDevSettings>
+    <AirCylinderDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Outfeed Inner Clamp Cylinder</DisplayName>
+      <TagName>Outfeed.InnerClampCylinder.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <ExtendTime>
+        <Value>500</Value>
+        <Description>Max Extend Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </ExtendTime>
+      <RetractTime>
+        <Value>500</Value>
+        <Description>Max Retract Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </RetractTime>
+      <OutputPulseTime>
+        <Value>100</Value>
+        <Description>Output Pulse Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>10000</Max>
+        <Editable>true</Editable>
+      </OutputPulseTime>
+      <HasExtendLimit>
+        <Value>true</Value>
+        <Description>Has Extended Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasExtendLimit>
+      <HasRetractLimit>
+        <Value>true</Value>
+        <Description>Has Retracted Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasRetractLimit>
+    </AirCylinderDevSettings>
+    <AirCylinderDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Outfeed Outer Clamp Cylinder</DisplayName>
+      <TagName>Outfeed.OuterClampCylinder.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <ExtendTime>
+        <Value>500</Value>
+        <Description>Max Extend Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </ExtendTime>
+      <RetractTime>
+        <Value>500</Value>
+        <Description>Max Retract Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>2000</Max>
+        <Editable>true</Editable>
+      </RetractTime>
+      <OutputPulseTime>
+        <Value>100</Value>
+        <Description>Output Pulse Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>10000</Max>
+        <Editable>true</Editable>
+      </OutputPulseTime>
+      <HasExtendLimit>
+        <Value>true</Value>
+        <Description>Has Extended Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasExtendLimit>
+      <HasRetractLimit>
+        <Value>true</Value>
+        <Description>Has Retracted Limit</Description>
+        <Units />
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </HasRetractLimit>
+    </AirCylinderDevSettings>
+  </AirCylinders>
+  <HydraulicCylinders />
+  <DigitalSensors>
+    <DigitalSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>InDeck Sensor</DisplayName>
+      <TagName>InDeck.DeckSensor.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DebounceTime>
+        <Value>0</Value>
+        <Description>Debounce Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>1000</Max>
+        <Editable>true</Editable>
+      </DebounceTime>
+      <ActiveLow>
+        <Value>false</Value>
+        <Description>Active Low</Description>
+        <Units>false</Units>
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ActiveLow>
+    </DigitalSensorDevSettings>
+    <DigitalSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Infeed Timber Sensor</DisplayName>
+      <TagName>Infeed.TimberSensor.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DebounceTime>
+        <Value>0</Value>
+        <Description>Debounce Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>1000</Max>
+        <Editable>true</Editable>
+      </DebounceTime>
+      <ActiveLow>
+        <Value>false</Value>
+        <Description>Active Low</Description>
+        <Units>false</Units>
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ActiveLow>
+    </DigitalSensorDevSettings>
+    <DigitalSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Infeed Reference Sensor</DisplayName>
+      <TagName>Infeed.ReferenceSensor.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DebounceTime>
+        <Value>0</Value>
+        <Description>Debounce Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>1000</Max>
+        <Editable>true</Editable>
+      </DebounceTime>
+      <ActiveLow>
+        <Value>false</Value>
+        <Description>Active Low</Description>
+        <Units>false</Units>
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ActiveLow>
+    </DigitalSensorDevSettings>
+    <DigitalSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Outfeed Timber Sensor</DisplayName>
+      <TagName>Outfeed.TimberSensor.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DebounceTime>
+        <Value>0</Value>
+        <Description>Debounce Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>1000</Max>
+        <Editable>true</Editable>
+      </DebounceTime>
+      <ActiveLow>
+        <Value>false</Value>
+        <Description>Active Low</Description>
+        <Units>false</Units>
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ActiveLow>
+    </DigitalSensorDevSettings>
+    <DigitalSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>InDeck Correction Sensor 1</DisplayName>
+      <TagName>InDeck.CorrectionSensor[0].Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DebounceTime>
+        <Value>0</Value>
+        <Description>Debounce Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>1000</Max>
+        <Editable>true</Editable>
+      </DebounceTime>
+      <ActiveLow>
+        <Value>false</Value>
+        <Description>Active Low</Description>
+        <Units>false</Units>
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ActiveLow>
+    </DigitalSensorDevSettings>
+    <DigitalSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>InDeck Correction Sensor 2</DisplayName>
+      <TagName>InDeck.CorrectionSensor[1].Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DebounceTime>
+        <Value>0</Value>
+        <Description>Debounce Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>1000</Max>
+        <Editable>true</Editable>
+      </DebounceTime>
+      <ActiveLow>
+        <Value>false</Value>
+        <Description>Active Low</Description>
+        <Units>false</Units>
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ActiveLow>
+    </DigitalSensorDevSettings>
+    <DigitalSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>InDeck Correction Sensor 3</DisplayName>
+      <TagName>InDeck.CorrectionSensor[2].Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DebounceTime>
+        <Value>0</Value>
+        <Description>Debounce Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>1000</Max>
+        <Editable>true</Editable>
+      </DebounceTime>
+      <ActiveLow>
+        <Value>false</Value>
+        <Description>Active Low</Description>
+        <Units>false</Units>
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ActiveLow>
+    </DigitalSensorDevSettings>
+    <DigitalSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>InDeck Correction Sensor 4</DisplayName>
+      <TagName>InDeck.CorrectionSensor[3].Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DebounceTime>
+        <Value>0</Value>
+        <Description>Debounce Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>1000</Max>
+        <Editable>true</Editable>
+      </DebounceTime>
+      <ActiveLow>
+        <Value>false</Value>
+        <Description>Active Low</Description>
+        <Units>false</Units>
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ActiveLow>
+    </DigitalSensorDevSettings>
+    <DigitalSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>InDeck Correction Sensor 5</DisplayName>
+      <TagName>InDeck.CorrectionSensor[4].Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DebounceTime>
+        <Value>0</Value>
+        <Description>Debounce Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>1000</Max>
+        <Editable>true</Editable>
+      </DebounceTime>
+      <ActiveLow>
+        <Value>false</Value>
+        <Description>Active Low</Description>
+        <Units>false</Units>
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ActiveLow>
+    </DigitalSensorDevSettings>
+    <DigitalSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>InDeck Correction Sensor 6</DisplayName>
+      <TagName>InDeck.CorrectionSensor[5].Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DebounceTime>
+        <Value>0</Value>
+        <Description>Debounce Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>1000</Max>
+        <Editable>true</Editable>
+      </DebounceTime>
+      <ActiveLow>
+        <Value>false</Value>
+        <Description>Active Low</Description>
+        <Units>false</Units>
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ActiveLow>
+    </DigitalSensorDevSettings>
+    <DigitalSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>InDeck Correction Sensor 7</DisplayName>
+      <TagName>InDeck.CorrectionSensor[6].Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DebounceTime>
+        <Value>0</Value>
+        <Description>Debounce Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>1000</Max>
+        <Editable>true</Editable>
+      </DebounceTime>
+      <ActiveLow>
+        <Value>false</Value>
+        <Description>Active Low</Description>
+        <Units>false</Units>
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ActiveLow>
+    </DigitalSensorDevSettings>
+    <DigitalSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>InDeck Correction Sensor 8</DisplayName>
+      <TagName>InDeck.CorrectionSensor[7].Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DebounceTime>
+        <Value>0</Value>
+        <Description>Debounce Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>1000</Max>
+        <Editable>true</Editable>
+      </DebounceTime>
+      <ActiveLow>
+        <Value>false</Value>
+        <Description>Active Low</Description>
+        <Units>false</Units>
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ActiveLow>
+    </DigitalSensorDevSettings>
+    <DigitalSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>InDeck Correction Sensor 9</DisplayName>
+      <TagName>InDeck.CorrectionSensor[8].Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DebounceTime>
+        <Value>0</Value>
+        <Description>Debounce Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>1000</Max>
+        <Editable>true</Editable>
+      </DebounceTime>
+      <ActiveLow>
+        <Value>false</Value>
+        <Description>Active Low</Description>
+        <Units>false</Units>
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ActiveLow>
+    </DigitalSensorDevSettings>
+    <DigitalSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>InDeck Correction Sensor 10</DisplayName>
+      <TagName>InDeck.CorrectionSensor[9].Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DebounceTime>
+        <Value>0</Value>
+        <Description>Debounce Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>1000</Max>
+        <Editable>true</Editable>
+      </DebounceTime>
+      <ActiveLow>
+        <Value>false</Value>
+        <Description>Active Low</Description>
+        <Units>false</Units>
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ActiveLow>
+    </DigitalSensorDevSettings>
+    <DigitalSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>InDeck Correction Sensor 11</DisplayName>
+      <TagName>InDeck.CorrectionSensor[10].Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DebounceTime>
+        <Value>0</Value>
+        <Description>Debounce Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>1000</Max>
+        <Editable>true</Editable>
+      </DebounceTime>
+      <ActiveLow>
+        <Value>false</Value>
+        <Description>Active Low</Description>
+        <Units>false</Units>
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ActiveLow>
+    </DigitalSensorDevSettings>
+    <DigitalSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>InDeck Correction Sensor 12</DisplayName>
+      <TagName>InDeck.CorrectionSensor[11].Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DebounceTime>
+        <Value>0</Value>
+        <Description>Debounce Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>1000</Max>
+        <Editable>true</Editable>
+      </DebounceTime>
+      <ActiveLow>
+        <Value>false</Value>
+        <Description>Active Low</Description>
+        <Units>false</Units>
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ActiveLow>
+    </DigitalSensorDevSettings>
+    <DigitalSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>InDeck Correction Sensor 13</DisplayName>
+      <TagName>InDeck.CorrectionSensor[12].Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DebounceTime>
+        <Value>0</Value>
+        <Description>Debounce Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>1000</Max>
+        <Editable>true</Editable>
+      </DebounceTime>
+      <ActiveLow>
+        <Value>false</Value>
+        <Description>Active Low</Description>
+        <Units>false</Units>
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ActiveLow>
+    </DigitalSensorDevSettings>
+    <DigitalSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>InDeck Correction Sensor 14</DisplayName>
+      <TagName>InDeck.CorrectionSensor[13].Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DebounceTime>
+        <Value>0</Value>
+        <Description>Debounce Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>1000</Max>
+        <Editable>true</Editable>
+      </DebounceTime>
+      <ActiveLow>
+        <Value>false</Value>
+        <Description>Active Low</Description>
+        <Units>false</Units>
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ActiveLow>
+    </DigitalSensorDevSettings>
+    <DigitalSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>InDeck Correction Sensor 15</DisplayName>
+      <TagName>InDeck.CorrectionSensor[14].Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DebounceTime>
+        <Value>0</Value>
+        <Description>Debounce Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>1000</Max>
+        <Editable>true</Editable>
+      </DebounceTime>
+      <ActiveLow>
+        <Value>false</Value>
+        <Description>Active Low</Description>
+        <Units>false</Units>
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ActiveLow>
+    </DigitalSensorDevSettings>
+    <DigitalSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>InDeck Correction Sensor 16</DisplayName>
+      <TagName>InDeck.CorrectionSensor[15].Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <DebounceTime>
+        <Value>0</Value>
+        <Description>Debounce Time</Description>
+        <Units>ms</Units>
+        <Min>0</Min>
+        <Max>1000</Max>
+        <Editable>true</Editable>
+      </DebounceTime>
+      <ActiveLow>
+        <Value>false</Value>
+        <Description>Active Low</Description>
+        <Units>false</Units>
+        <Min>false</Min>
+        <Max>false</Max>
+        <Editable>true</Editable>
+      </ActiveLow>
+    </DigitalSensorDevSettings>
+  </DigitalSensors>
+  <AnalogSensors>
+    <AnalogSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Infeed Outer Guide Short Position Sensor</DisplayName>
+      <TagName>Infeed.OuterGuideShortPositionSensor.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <RawLower>
+        <Value>0</Value>
+        <Description>Raw Lower</Description>
+        <Units />
+        <Min>0</Min>
+        <Max>32767</Max>
+        <Editable>true</Editable>
+      </RawLower>
+      <RawUpper>
+        <Value>32767</Value>
+        <Description>Raw Upper</Description>
+        <Units />
+        <Min>0</Min>
+        <Max>32767</Max>
+        <Editable>true</Editable>
+      </RawUpper>
+      <ValueLower>
+        <Value>0</Value>
+        <Description>Value Lower</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </ValueLower>
+      <ValueUpper>
+        <Value>100</Value>
+        <Description>Value Upper</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </ValueUpper>
+      <Offset>
+        <Value>0</Value>
+        <Description>Value Offset</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </Offset>
+    </AnalogSensorDevSettings>
+    <AnalogSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Infeed Outer Guide Long Position Sensor</DisplayName>
+      <TagName>Infeed.OuterGuideLongPositionSensor.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <RawLower>
+        <Value>0</Value>
+        <Description>Raw Lower</Description>
+        <Units />
+        <Min>0</Min>
+        <Max>32767</Max>
+        <Editable>true</Editable>
+      </RawLower>
+      <RawUpper>
+        <Value>32767</Value>
+        <Description>Raw Upper</Description>
+        <Units />
+        <Min>0</Min>
+        <Max>32767</Max>
+        <Editable>true</Editable>
+      </RawUpper>
+      <ValueLower>
+        <Value>0</Value>
+        <Description>Value Lower</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </ValueLower>
+      <ValueUpper>
+        <Value>100</Value>
+        <Description>Value Upper</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </ValueUpper>
+      <Offset>
+        <Value>0</Value>
+        <Description>Value Offset</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </Offset>
+    </AnalogSensorDevSettings>
+    <AnalogSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Infeed Outer Guide Virtual Position Sensor</DisplayName>
+      <TagName>Infeed.OuterGuideVirtualPositionSensor.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <RawLower>
+        <Value>0</Value>
+        <Description>Raw Lower</Description>
+        <Units />
+        <Min>0</Min>
+        <Max>32767</Max>
+        <Editable>true</Editable>
+      </RawLower>
+      <RawUpper>
+        <Value>32767</Value>
+        <Description>Raw Upper</Description>
+        <Units />
+        <Min>0</Min>
+        <Max>32767</Max>
+        <Editable>true</Editable>
+      </RawUpper>
+      <ValueLower>
+        <Value>0</Value>
+        <Description>Value Lower</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </ValueLower>
+      <ValueUpper>
+        <Value>100</Value>
+        <Description>Value Upper</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </ValueUpper>
+      <Offset>
+        <Value>0</Value>
+        <Description>Value Offset</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </Offset>
+    </AnalogSensorDevSettings>
+    <AnalogSensorDevSettings>
+      <AccessLevel>Administrator</AccessLevel>
+      <DisplayName>Infeed Outer Clamp Position Sensor</DisplayName>
+      <TagName>Infeed.OuterClampPositionSensor.Parameter</TagName>
+      <IsHidden>false</IsHidden>
+      <RawLower>
+        <Value>0</Value>
+        <Description>Raw Lower</Description>
+        <Units />
+        <Min>0</Min>
+        <Max>32767</Max>
+        <Editable>true</Editable>
+      </RawLower>
+      <RawUpper>
+        <Value>32767</Value>
+        <Description>Raw Upper</Description>
+        <Units />
+        <Min>0</Min>
+        <Max>32767</Max>
+        <Editable>true</Editable>
+      </RawUpper>
+      <ValueLower>
+        <Value>0</Value>
+        <Description>Value Lower</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </ValueLower>
+      <ValueUpper>
+        <Value>100</Value>
+        <Description>Value Upper</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </ValueUpper>
+      <Offset>
+        <Value>0</Value>
+        <Description>Value Offset</Description>
+        <Units>mm</Units>
+        <Min>0</Min>
+        <Max>0</Max>
+        <Editable>true</Editable>
+      </Offset>
+    </AnalogSensorDevSettings>
+  </AnalogSensors>
+  <InDeck>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Infeed Deck</DisplayName>
+    <TagName>InDeck.Parameter</TagName>
+    <IsHidden>false</IsHidden>
+    <ChainsRunOnTime>
+      <Value>500</Value>
+      <Description>Chains Run On Time</Description>
+      <Units>ms</Units>
+      <Min>0</Min>
+      <Max>10000</Max>
+      <Editable>true</Editable>
+    </ChainsRunOnTime>
+    <ChainsBackoffTime>
+      <Value>500</Value>
+      <Description>Chains Backoff Time</Description>
+      <Units>ms</Units>
+      <Min>0</Min>
+      <Max>10000</Max>
+      <Editable>true</Editable>
+    </ChainsBackoffTime>
+    <ChainsTimeout>
+      <Value>30</Value>
+      <Description>Chains Timeout Time</Description>
+      <Units>s</Units>
+      <Min>0</Min>
+      <Max>120</Max>
+      <Editable>true</Editable>
+    </ChainsTimeout>
+    <DeckSensorToReferenceDistance>
+      <Value>1005.2</Value>
+      <Description>Deck Sensor To Reference Sensor</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Editable>true</Editable>
+    </DeckSensorToReferenceDistance>
+    <HasFeedCorrectionSensors>
+      <Value>true</Value>
+      <Description>Has Feed Correction Sensors</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </HasFeedCorrectionSensors>
+    <UseFeedCorrectionSensorsForPrinterReference>
+      <Value>true</Value>
+      <Description>Use Feed Correction Sensors For Printer Reference</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </UseFeedCorrectionSensorsForPrinterReference>
+  </InDeck>
+  <InFeed>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Infeed</DisplayName>
+    <TagName>Infeed.Parameter</TagName>
+    <IsHidden>false</IsHidden>
+    <TimberSensorToReferenceDistance>
+      <Value>179.3</Value>
+      <Description>Timber Sensor to Reference Sensor</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Editable>true</Editable>
+    </TimberSensorToReferenceDistance>
+    <OuterClampToReferenceDistance>
+      <Value>245.2</Value>
+      <Description>Outer Clamp to Reference Sensor</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Editable>true</Editable>
+    </OuterClampToReferenceDistance>
+    <ShortGuideMaxTimberWidth>
+      <Value>120</Value>
+      <Description>Max Timber Width To Be Clamped By Short Guide Only</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Editable>true</Editable>
+    </ShortGuideMaxTimberWidth>
+    <HardwareConfiguration>
+      <Value>1</Value>
+      <Description>Hardware Configuration (0=Dual 1=Independent)</Description>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Editable>true</Editable>
+    </HardwareConfiguration>
+    <OuterGuideToReferenceDistance>
+      <Value>351.9</Value>
+      <Description>Outer Guide to Reference Sensor</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Editable>true</Editable>
+    </OuterGuideToReferenceDistance>
+    <InnerGuideToReferenceDistance>
+      <Value>78</Value>
+      <Description>Inner Guide to Reference Sensor</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Editable>true</Editable>
+    </InnerGuideToReferenceDistance>
+  </InFeed>
+  <OutFeed>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Outfeed</DisplayName>
+    <TagName>Outfeed.Parameter</TagName>
+    <IsHidden>false</IsHidden>
+    <TimberSensorToReferenceDistance>
+      <Value>828.90000000000009</Value>
+      <Description>Timber Sensor to Reference Sensor</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Editable>true</Editable>
+    </TimberSensorToReferenceDistance>
+    <OuterClampToReferenceDistance>
+      <Value>1032.8</Value>
+      <Description>Outer Clamp to Reference Sensor</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Editable>true</Editable>
+    </OuterClampToReferenceDistance>
+    <ShortGuideMaxTimberWidth>
+      <Value>120</Value>
+      <Description>Max Timber Width To Be Clamped By Short Guide Only</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Editable>true</Editable>
+    </ShortGuideMaxTimberWidth>
+    <HardwareConfiguration>
+      <Value>1</Value>
+      <Description>Hardware Configuration (0=Dual 1=Independent)</Description>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Editable>true</Editable>
+    </HardwareConfiguration>
+    <OuterGuideToReferenceDistance>
+      <Value>1143.8</Value>
+      <Description>Outer Guide to Reference Sensor</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Editable>true</Editable>
+    </OuterGuideToReferenceDistance>
+    <InnerGuideToReferenceDistance>
+      <Value>707.5</Value>
+      <Description>Inner Guide to Reference Sensor</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Editable>true</Editable>
+    </InnerGuideToReferenceDistance>
+  </OutFeed>
+  <Saw>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Saw</DisplayName>
+    <TagName>Saw.Parameter</TagName>
+    <IsHidden>false</IsHidden>
+    <BladeDiameter>
+      <Value>450</Value>
+      <Description>Blade Diameter</Description>
+      <Units>mm</Units>
+      <Min>300</Min>
+      <Max>600</Max>
+      <Editable>true</Editable>
+    </BladeDiameter>
+    <BladeWidth>
+      <Value>4.2</Value>
+      <Description>Blade Width</Description>
+      <Units>mm</Units>
+      <Min>3</Min>
+      <Max>6</Max>
+      <Editable>true</Editable>
+    </BladeWidth>
+    <BladeAngleRadius>
+      <Value>94</Value>
+      <Description>Blade Angle Radius</Description>
+      <Units>mm</Units>
+      <Min>80</Min>
+      <Max>120</Max>
+      <Editable>true</Editable>
+    </BladeAngleRadius>
+    <BladeTiltRadius>
+      <Value>93.5</Value>
+      <Description>Blade Tilt Radius</Description>
+      <Units>mm</Units>
+      <Min>80</Min>
+      <Max>120</Max>
+      <Editable>true</Editable>
+    </BladeTiltRadius>
+    <AngleAxisToReferenceSensor>
+      <Value>403.9</Value>
+      <Description>Angle Axis to Reference Sensor</Description>
+      <Units>mm</Units>
+      <Min>300</Min>
+      <Max>500</Max>
+      <Editable>true</Editable>
+    </AngleAxisToReferenceSensor>
+    <InfeedOnLeftOfSaw>
+      <Value>true</Value>
+      <Description>Infeed On Left Side Of Saw</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </InfeedOnLeftOfSaw>
+    <BladeTipToMotorMount>
+      <Value>130</Value>
+      <Description>Lowest Point Of Saw Blade To Lowest Point On Motor Mount</Description>
+      <Units>mm</Units>
+      <Min>50</Min>
+      <Max>200</Max>
+      <Editable>true</Editable>
+    </BladeTipToMotorMount>
+  </Saw>
+  <Waste>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Waste</DisplayName>
+    <TagName>Waste.Parameter</TagName>
+    <IsHidden>false</IsHidden>
+    <DropToBoxTime>
+      <Value>10</Value>
+      <Description>Drop To Box Time</Description>
+      <Units>s</Units>
+      <Min>0</Min>
+      <Max>60</Max>
+      <Editable>true</Editable>
+    </DropToBoxTime>
+  </Waste>
+  <Sequence>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Sequence</DisplayName>
+    <TagName>SeqParameter</TagName>
+    <IsHidden>false</IsHidden>
+    <TimberTolerance>
+      <Value>6</Value>
+      <Description>Timber Measuring Tolerance</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>10</Max>
+      <Editable>true</Editable>
+    </TimberTolerance>
+    <ReferenceFeedSpeed>
+      <Value>500</Value>
+      <Description>Reference Feed Speed</Description>
+      <Units>mm/s</Units>
+      <Min>1</Min>
+      <Max>1000</Max>
+      <Editable>true</Editable>
+    </ReferenceFeedSpeed>
+    <EjectionSpeed>
+      <Value>1000</Value>
+      <Description>Ejection Speed</Description>
+      <Units>mm/s</Units>
+      <Min>1</Min>
+      <Max>2500</Max>
+      <Editable>true</Editable>
+    </EjectionSpeed>
+    <FeedSpeed>
+      <Value>1000</Value>
+      <Description>Feed Speed</Description>
+      <Units>mm/s</Units>
+      <Min>1</Min>
+      <Max>2500</Max>
+      <Editable>true</Editable>
+    </FeedSpeed>
+    <BladeHeightAboveTimber>
+      <Value>50</Value>
+      <Description>Blade Height Above Timber at Start of Plunge</Description>
+      <Units>mm</Units>
+      <Min>1</Min>
+      <Max>50</Max>
+      <Editable>true</Editable>
+    </BladeHeightAboveTimber>
+    <Overcut>
+      <Value>20</Value>
+      <Description>Overcut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>50</Max>
+      <Editable>true</Editable>
+    </Overcut>
+    <MaxPlungeSpeed>
+      <Value>250</Value>
+      <Description>Max Plunge Speed</Description>
+      <Units>mm/s</Units>
+      <Min>1</Min>
+      <Max>1500</Max>
+      <Editable>true</Editable>
+    </MaxPlungeSpeed>
+    <MinPlungeSpeed>
+      <Value>100</Value>
+      <Description>Min Plunge Speed</Description>
+      <Units>mm/s</Units>
+      <Min>1</Min>
+      <Max>1500</Max>
+      <Editable>true</Editable>
+    </MinPlungeSpeed>
+    <PlungeReturnSpeed>
+      <Value>500</Value>
+      <Description>Plunge Return Speed</Description>
+      <Units>mm/s</Units>
+      <Min>1</Min>
+      <Max>1500</Max>
+      <Editable>true</Editable>
+    </PlungeReturnSpeed>
+    <TiltedPlungeSpeed>
+      <Value>100</Value>
+      <Description>Tilted Plunge Speed</Description>
+      <Units>mm/s</Units>
+      <Min>1</Min>
+      <Max>1500</Max>
+      <Editable>true</Editable>
+    </TiltedPlungeSpeed>
+    <TiltedPlungeReturnSpeed>
+      <Value>100</Value>
+      <Description>Tilted Plunge Return Speed</Description>
+      <Units>mm/s</Units>
+      <Min>1</Min>
+      <Max>1500</Max>
+      <Editable>true</Editable>
+    </TiltedPlungeReturnSpeed>
+    <CrosscutSpeed>
+      <Value>100</Value>
+      <Description>Crosscut Speed</Description>
+      <Units>mm/s</Units>
+      <Min>1</Min>
+      <Max>1000</Max>
+      <Editable>true</Editable>
+    </CrosscutSpeed>
+    <RipCutSpeed>
+      <Value>50</Value>
+      <Description>Rip Cut Speed</Description>
+      <Units>mm/s</Units>
+      <Min>1</Min>
+      <Max>1000</Max>
+      <Editable>true</Editable>
+    </RipCutSpeed>
+    <WasteConveyorRunOnTime>
+      <Value>60</Value>
+      <Description>Waste Conveyor Run On Time</Description>
+      <Units>s</Units>
+      <Min>0</Min>
+      <Max>300</Max>
+      <Editable>true</Editable>
+    </WasteConveyorRunOnTime>
+    <OutDeckRollersRunOnTime>
+      <Value>5000</Value>
+      <Description>OutDeck Rollers Run On Time</Description>
+      <Units>ms</Units>
+      <Min>0</Min>
+      <Max>60000</Max>
+      <Editable>true</Editable>
+    </OutDeckRollersRunOnTime>
+    <TimberEdgeToClampOpenDistance>
+      <Value>40</Value>
+      <Description>Timber Edge to Clamp Open Distance</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>250</Max>
+      <Editable>true</Editable>
+    </TimberEdgeToClampOpenDistance>
+    <SafeVerticalPosition>
+      <Value>120</Value>
+      <Description>Safe Vertical Position</Description>
+      <Units>mm</Units>
+      <Min>100</Min>
+      <Max>130</Max>
+      <Editable>true</Editable>
+    </SafeVerticalPosition>
+    <SingleStepMode>
+      <Value>false</Value>
+      <Description>Enable Single Step Mode</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </SingleStepMode>
+    <TimberWidthCheck>
+      <Value>true</Value>
+      <Description>Check Timber Width Measurement</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </TimberWidthCheck>
+    <TimberHeightCheck>
+      <Value>true</Value>
+      <Description>Check Timber Height Measurement</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </TimberHeightCheck>
+    <BridgeCutHeight>
+      <Value>8</Value>
+      <Description>Bridge Cut Height</Description>
+      <Units>mm</Units>
+      <Min>1</Min>
+      <Max>10</Max>
+      <Editable>true</Editable>
+    </BridgeCutHeight>
+    <BridgeCutLength>
+      <Value>50</Value>
+      <Description>Bridge Cut Length</Description>
+      <Units>mm</Units>
+      <Min>10</Min>
+      <Max>200</Max>
+      <Editable>true</Editable>
+    </BridgeCutLength>
+    <InfeedTimberRetractionDistance>
+      <Value>80</Value>
+      <Description>Infeed Timber Retraction Distance</Description>
+      <Units>mm</Units>
+      <Min>10</Min>
+      <Max>200</Max>
+      <Editable>true</Editable>
+    </InfeedTimberRetractionDistance>
+    <EnableStockLengthMeasurement>
+      <Value>false</Value>
+      <Description>Enable Stock Length Measurement</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </EnableStockLengthMeasurement>
+    <EnableInfeedReclampingDuringFetch>
+      <Value>false</Value>
+      <Description>Enable Infeed Reclamping During Fetch</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </EnableInfeedReclampingDuringFetch>
+    <EnablePreFetchTimber>
+      <Value>false</Value>
+      <Description>Enable Pre-Fetch Timber</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </EnablePreFetchTimber>
+    <EnableFeedCorrection>
+      <Value>true</Value>
+      <Description>Enable Feed Correction</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </EnableFeedCorrection>
+    <DisableCabinetSensorsForFeedCorrection>
+      <Value>true</Value>
+      <Description>Disable Cabinet Sensors for Feed Correction</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </DisableCabinetSensorsForFeedCorrection>
+    <FeedCorrectionOffset>
+      <Value>-2.5</Value>
+      <Description>Feed Correction Offset</Description>
+      <Units>mm</Units>
+      <Min>-5</Min>
+      <Max>5</Max>
+      <Editable>true</Editable>
+    </FeedCorrectionOffset>
+    <EnableStockLengthAdjustment>
+      <Value>false</Value>
+      <Description>Enable Stock Length Adjustment</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </EnableStockLengthAdjustment>
+    <ScoreUndercut>
+      <Value>60</Value>
+      <Description>Amount of Undercut to Apply to Score Cuts</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>80</Max>
+      <Editable>true</Editable>
+    </ScoreUndercut>
+    <OuterGuideExclusionDistance>
+      <Value>450</Value>
+      <Description>Outer Guide Exclusion Distance</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>1000</Max>
+      <Editable>true</Editable>
+    </OuterGuideExclusionDistance>
+    <NickCutDepth>
+      <Value>4</Value>
+      <Description>Nick Cut Depth</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>10</Max>
+      <Editable>true</Editable>
+    </NickCutDepth>
+    <CourtesyCutDepth>
+      <Value>10</Value>
+      <Description>Courtesy Cut Depth</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>20</Max>
+      <Editable>true</Editable>
+    </CourtesyCutDepth>
+    <ReuseWasteBlocks>
+      <Value>false</Value>
+      <Description>Cut waste into reuse block</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>true</Editable>
+    </ReuseWasteBlocks>
+    <ReuseWasteBlockSize>
+      <Value>565</Value>
+      <Description>Size of waste reuse block</Description>
+      <Units>mm</Units>
+      <Min>100</Min>
+      <Max>600</Max>
+      <Editable>true</Editable>
+    </ReuseWasteBlockSize>
+    <IsPieceGiverConnected>
+      <Value>false</Value>
+      <Description>PeiceGiver Connected</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Editable>false</Editable>
+    </IsPieceGiverConnected>
+  </Sequence>
+</PieceMakerMachineSettings>

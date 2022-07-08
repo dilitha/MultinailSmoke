@@ -1,0 +1,16 @@
+1=Top Chord
+11=Bottom Chord
+21=Web
+31=Web
+101=Top Plate
+102=Very Top Plate
+111=Bottom Plate
+121=Std Stud
+122=Support Stud
+123=Jamb Stud
+124=Conc Load Stud
+131=Lintel
+144=Sill
+151=Over
+152=Under
+162=Junction Block

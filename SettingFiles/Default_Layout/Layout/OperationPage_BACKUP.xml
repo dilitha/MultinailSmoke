@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LayoutRoot>
+  <RootPanel Orientation="Horizontal">
+    <LayoutAnchorablePaneGroup Orientation="Horizontal" DockWidth="0.467645166595574*">
+      <LayoutAnchorablePane DockWidth="0.108947739782214*" FloatingWidth="179" FloatingHeight="847" FloatingLeft="799" FloatingTop="490">
+        <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="600" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Infeed" IsSelected="True" ContentId="Pane1" FloatingLeft="427" FloatingTop="486" FloatingWidth="179" FloatingHeight="847" CanClose="False" LastActivationTimeStamp="03/30/2022 11:59:09" />
+        <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="600" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Outfeed" ContentId="Pane2" FloatingLeft="799" FloatingTop="490" FloatingWidth="179" FloatingHeight="847" CanClose="False" LastActivationTimeStamp="03/11/2022 12:25:52" />
+      </LayoutAnchorablePane>
+    </LayoutAnchorablePaneGroup>
+    <LayoutAnchorablePane DockWidth="0.334048473771892*">
+      <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="600" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Cutting" IsSelected="True" ContentId="Pane3" CanClose="False" LastActivationTimeStamp="03/30/2022 11:58:30" />
+    </LayoutAnchorablePane>
+    <LayoutAnchorablePane Id="b18f3abb-0b1f-4ec0-8f54-f746c593383e" />
+    <LayoutAnchorablePane Id="2a81bece-e070-44b9-9058-a2fdd325a615" />
+    <LayoutAnchorablePane Id="98f9291a-15ab-4afe-8e81-5ac88b9f372c" />
+  </RootPanel>
+  <TopSide />
+  <RightSide>
+    <LayoutAnchorGroup>
+      <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="695" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Designer" ContentId="RightSide1" CanClose="False" CanFloat="False" LastActivationTimeStamp="03/30/2022 11:58:53" />
+    </LayoutAnchorGroup>
+    <LayoutAnchorGroup>
+      <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="1009" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Jobs" ContentId="RightSide2" CanClose="False" CanFloat="False" LastActivationTimeStamp="03/31/2022 10:46:31" />
+    </LayoutAnchorGroup>
+    <LayoutAnchorGroup>
+      <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="1200" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Devices" ContentId="RightSide4" CanClose="False" CanFloat="False" LastActivationTimeStamp="02/10/2022 11:57:20" />
+    </LayoutAnchorGroup>
+  </RightSide>
+  <LeftSide />
+  <BottomSide />
+  <FloatingWindows />
+  <Hidden>
+    <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="600" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Pane4" IsSelected="True" ContentId="Pane4" CanClose="False" LastActivationTimeStamp="03/31/2022 10:46:18" PreviousContainerId="b18f3abb-0b1f-4ec0-8f54-f746c593383e" PreviousContainerIndex="0" />
+    <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="600" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Pane5" IsSelected="True" ContentId="Pane5" CanClose="False" LastActivationTimeStamp="03/31/2022 10:46:18" PreviousContainerId="2a81bece-e070-44b9-9058-a2fdd325a615" PreviousContainerIndex="0" />
+    <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="600" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Pane6" IsSelected="True" ContentId="Pane6" CanClose="False" LastActivationTimeStamp="03/31/2022 10:46:18" PreviousContainerId="98f9291a-15ab-4afe-8e81-5ac88b9f372c" PreviousContainerIndex="0" />
+    <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="1200" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="RightSide3" IsSelected="True" ContentId="RightSide3" CanClose="False" CanFloat="False" LastActivationTimeStamp="03/31/2022 10:46:18" />
+    <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="1200" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="RightSide5" IsSelected="True" ContentId="RightSide5" CanClose="False" CanFloat="False" LastActivationTimeStamp="03/31/2022 10:46:18" />
+    <LayoutAnchorable CanHide="False" CanAutoHide="False" AutoHideWidth="1200" AutoHideMinWidth="100" AutoHideMinHeight="100" Title="RightSide6" IsSelected="True" ContentId="RightSide6" CanClose="False" CanFloat="False" LastActivationTimeStamp="03/31/2022 10:46:18" />
+  </Hidden>
+</LayoutRoot>

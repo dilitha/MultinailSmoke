@@ -1,0 +1,5137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OptimiserSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Configuration>
+    <AccessLevel>Administrator</AccessLevel>
+    <DisplayName>Configuration</DisplayName>
+    <IsHidden>false</IsHidden>
+    <UseCustomSawSettings>
+      <Value>false</Value>
+      <Description>Enable Custom Settings per Saw (Requires Restart)</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Saw</Group>
+      <Editable>true</Editable>
+    </UseCustomSawSettings>
+    <CustomSawNumbers>
+      <Value>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20</Value>
+      <Description>Custom Saw Number(s) (Requires Restart)</Description>
+      <Group>Saw</Group>
+      <Editable>true</Editable>
+    </CustomSawNumbers>
+  </Configuration>
+  <Stock>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Stock</DisplayName>
+    <IsHidden>false</IsHidden>
+    <GenerateNominalStock>
+      <Value>true</Value>
+      <Description>Generate Nominal Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </GenerateNominalStock>
+    <MinimumStockLength>
+      <Value>1000</Value>
+      <Description>Minimum Stock Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </MinimumStockLength>
+    <MaximumStockLength>
+      <Value>6300</Value>
+      <Description>Maximum Stock Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </MaximumStockLength>
+    <IgnoreGrade>
+      <Value>false</Value>
+      <Description>Ignore Grade</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </IgnoreGrade>
+    <IgnoreTreatment>
+      <Value>true</Value>
+      <Description>Ignore Treatment</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </IgnoreTreatment>
+    <IgnoreSpecies>
+      <Value>true</Value>
+      <Description>Ignore Species</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </IgnoreSpecies>
+    <IgnoreSeasoning>
+      <Value>true</Value>
+      <Description>Ignore Seasoning</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </IgnoreSeasoning>
+  </Stock>
+  <Cutting>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Cutting</DisplayName>
+    <IsHidden>false</IsHidden>
+    <TrimCutAmount>
+      <Value>5</Value>
+      <Description>Trim Cut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </TrimCutAmount>
+    <MaxStackHeight>
+      <Value>2</Value>
+      <Description>Max Stack Height</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxStackHeight>
+    <ConcurrentTrusses>
+      <Value>0</Value>
+      <Description>Concurrent Trusses</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ConcurrentTrusses>
+    <StrictConcurrency>
+      <Value>false</Value>
+      <Description>Force single panel per stick (When 'Concurrent Trusses' = 1)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StrictConcurrency>
+    <EnableReuse>
+      <Value>true</Value>
+      <Description>Enable Waste Reuse</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </EnableReuse>
+    <MaxWasteLengthForReuse>
+      <Value>1500</Value>
+      <Description>Maximum Length Of Waste for Reuse</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxWasteLengthForReuse>
+    <UnstackShortSticks>
+      <Value>true</Value>
+      <Description>Unstack Short Sticks</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </UnstackShortSticks>
+    <AllowBirdsmouthCuts>
+      <Value>true</Value>
+      <Description>Allow Birdsmouth Cuts</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AllowBirdsmouthCuts>
+    <BridgeCutMinimumLength>
+      <Value>450</Value>
+      <Description>Bridge Cut Minimum Length</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </BridgeCutMinimumLength>
+    <OptimiseUsingNominalLengths>
+      <Value>false</Value>
+      <Description>Optimise Using Nominal Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </OptimiseUsingNominalLengths>
+    <SortByStockDimensions>
+      <Value>true</Value>
+      <Description>Sort by stock dimensions (When 'Concurrent Trusses' = 0)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </SortByStockDimensions>
+    <PreferShortStockLengths>
+      <Value>true</Value>
+      <Description>Prefer Short Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PreferShortStockLengths>
+    <MaxChordFlipLength>
+      <Value>100</Value>
+      <Description>Permit Flipping Of Chords Shorter Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxChordFlipLength>
+    <ReverseCuttingOrder>
+      <Value>false</Value>
+      <Description>Reverse Cutting Order</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ReverseCuttingOrder>
+    <AddCleanupCutToLongWaste>
+      <Value>true</Value>
+      <Description>Add Cleanup Cut To Long Waste</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddCleanupCutToLongWaste>
+    <AddDockCutToChordsWithAngleBelow>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Chords With Angle Below</Description>
+      <Units>deg</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToChordsWithAngleBelow>
+    <AddDockCutToMembersWiderThan>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Members Wider Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToMembersWiderThan>
+    <StackByNameAndPanel>
+      <Value>false</Value>
+      <Description>Only Stack Members Of Same Name And Panel</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StackByNameAndPanel>
+    <AddHandlingMaterialForOutfeedSupport>
+      <Value>true</Value>
+      <Description>Add Handling Material For Outfeed Support</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddHandlingMaterialForOutfeedSupport>
+    <RipCutSeperationToTrailingMember>
+      <Value>150</Value>
+      <Description>Rip Cut Separation to Trailing Member</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </RipCutSeperationToTrailingMember>
+    <ProduceOptimiserSummary>
+      <Value>false</Value>
+      <Description>Write a Summary Report for the Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ProduceOptimiserSummary>
+    <PresentOptimiserSummary>
+      <Value>false</Value>
+      <Description>Present the Summary Report after Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PresentOptimiserSummary>
+  </Cutting>
+  <Adjustments>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Bottom Chord</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Component</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Top Chord</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Web</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Gable Block</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Cut Down Top Chord</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Outrigger</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>BGM</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Bottom Plate</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Top Plate</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Jam Stud</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Support Stud</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Timber Lintel</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Head Packer</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Sill</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Over</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Under</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Noggin</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Conc Load Stud</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Std Stud</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Horiz. Top Chord</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Joint Stud</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Bot Lintel Trim</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Custom Member</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Wailing/Pole Plate</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>L End Web</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>R End Web</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Top plate</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Bottom Chord Scab Front</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>L Block</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>R Block</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Braced Web</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Chock</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Junction Block</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Intermediate Ceiling Joist</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Verge</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Hip Block</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Hanging Beam</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Hanging Beam Trim</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Ribbon Plate</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Upper Top Chord</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Int Head Packer</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+    <OptimiserAdjustmentSetting>
+      <AccessLevel>Operator</AccessLevel>
+      <DisplayName>Pack Stud</DisplayName>
+      <IsHidden>false</IsHidden>
+      <LengthAdjustment>
+        <Value>0</Value>
+        <Description>Cutting Length Adjustment</Description>
+        <Units>mm</Units>
+        <Min>-50</Min>
+        <Max>50</Max>
+        <Group>Adjustments</Group>
+        <Editable>true</Editable>
+      </LengthAdjustment>
+    </OptimiserAdjustmentSetting>
+  </Adjustments>
+  <CuttingSaw01>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Saw #01 - Cutting</DisplayName>
+    <IsHidden>true</IsHidden>
+    <TrimCutAmount>
+      <Value>5</Value>
+      <Description>Trim Cut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </TrimCutAmount>
+    <MaxStackHeight>
+      <Value>1</Value>
+      <Description>Max Stack Height</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxStackHeight>
+    <ConcurrentTrusses>
+      <Value>0</Value>
+      <Description>Concurrent Trusses</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ConcurrentTrusses>
+    <StrictConcurrency>
+      <Value>false</Value>
+      <Description>Force single panel per stick (When 'Concurrent Trusses' = 1)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StrictConcurrency>
+    <EnableReuse>
+      <Value>true</Value>
+      <Description>Enable Waste Reuse</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </EnableReuse>
+    <MaxWasteLengthForReuse>
+      <Value>1500</Value>
+      <Description>Maximum Length Of Waste for Reuse</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxWasteLengthForReuse>
+    <UnstackShortSticks>
+      <Value>false</Value>
+      <Description>Unstack Short Sticks</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </UnstackShortSticks>
+    <AllowBirdsmouthCuts>
+      <Value>true</Value>
+      <Description>Allow Birdsmouth Cuts</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AllowBirdsmouthCuts>
+    <BridgeCutMinimumLength>
+      <Value>450</Value>
+      <Description>Bridge Cut Minimum Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </BridgeCutMinimumLength>
+    <OptimiseUsingNominalLengths>
+      <Value>false</Value>
+      <Description>Optimise Using Nominal Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </OptimiseUsingNominalLengths>
+    <SortByStockDimensions>
+      <Value>true</Value>
+      <Description>Sort by stock dimensions (When 'Concurrent Trusses' = 0)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </SortByStockDimensions>
+    <PreferShortStockLengths>
+      <Value>true</Value>
+      <Description>Prefer Short Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PreferShortStockLengths>
+    <MaxChordFlipLength>
+      <Value>900</Value>
+      <Description>Permit Flipping Of Chords Shorter Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxChordFlipLength>
+    <ReverseCuttingOrder>
+      <Value>false</Value>
+      <Description>Reverse Cutting Order</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ReverseCuttingOrder>
+    <AddCleanupCutToLongWaste>
+      <Value>true</Value>
+      <Description>Add Cleanup Cut To Long Waste</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddCleanupCutToLongWaste>
+    <AddDockCutToChordsWithAngleBelow>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Chords With Angle Below</Description>
+      <Units>deg</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToChordsWithAngleBelow>
+    <AddDockCutToMembersWiderThan>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Members Wider Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToMembersWiderThan>
+    <StackByNameAndPanel>
+      <Value>false</Value>
+      <Description>Only Stack Members Of Same Name And Panel</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StackByNameAndPanel>
+    <AddHandlingMaterialForOutfeedSupport>
+      <Value>true</Value>
+      <Description>Add Handling Material For Outfeed Support</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddHandlingMaterialForOutfeedSupport>
+    <RipCutSeperationToTrailingMember>
+      <Value>150</Value>
+      <Description>Rip Cut Separation to Trailing Member</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </RipCutSeperationToTrailingMember>
+    <ProduceOptimiserSummary>
+      <Value>false</Value>
+      <Description>Write a Summary Report for the Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ProduceOptimiserSummary>
+    <PresentOptimiserSummary>
+      <Value>false</Value>
+      <Description>Present the Summary Report after Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PresentOptimiserSummary>
+    <UseDefaultSettings>
+      <Value>true</Value>
+      <Description>Use Default Settings</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </UseDefaultSettings>
+  </CuttingSaw01>
+  <CuttingSaw02>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Saw #02 - Cutting</DisplayName>
+    <IsHidden>true</IsHidden>
+    <TrimCutAmount>
+      <Value>5</Value>
+      <Description>Trim Cut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </TrimCutAmount>
+    <MaxStackHeight>
+      <Value>1</Value>
+      <Description>Max Stack Height</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxStackHeight>
+    <ConcurrentTrusses>
+      <Value>0</Value>
+      <Description>Concurrent Trusses</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ConcurrentTrusses>
+    <StrictConcurrency>
+      <Value>false</Value>
+      <Description>Force single panel per stick (When 'Concurrent Trusses' = 1)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StrictConcurrency>
+    <EnableReuse>
+      <Value>true</Value>
+      <Description>Enable Waste Reuse</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </EnableReuse>
+    <MaxWasteLengthForReuse>
+      <Value>2399</Value>
+      <Description>Maximum Length Of Waste for Reuse</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxWasteLengthForReuse>
+    <UnstackShortSticks>
+      <Value>false</Value>
+      <Description>Unstack Short Sticks</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </UnstackShortSticks>
+    <AllowBirdsmouthCuts>
+      <Value>false</Value>
+      <Description>Allow Birdsmouth Cuts</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AllowBirdsmouthCuts>
+    <BridgeCutMinimumLength>
+      <Value>450</Value>
+      <Description>Bridge Cut Minimum Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </BridgeCutMinimumLength>
+    <OptimiseUsingNominalLengths>
+      <Value>false</Value>
+      <Description>Optimise Using Nominal Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </OptimiseUsingNominalLengths>
+    <SortByStockDimensions>
+      <Value>false</Value>
+      <Description>Sort by stock dimensions (When 'Concurrent Trusses' = 0)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </SortByStockDimensions>
+    <PreferShortStockLengths>
+      <Value>true</Value>
+      <Description>Prefer Short Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PreferShortStockLengths>
+    <MaxChordFlipLength>
+      <Value>900</Value>
+      <Description>Permit Flipping Of Chords Shorter Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxChordFlipLength>
+    <ReverseCuttingOrder>
+      <Value>false</Value>
+      <Description>Reverse Cutting Order</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ReverseCuttingOrder>
+    <AddCleanupCutToLongWaste>
+      <Value>true</Value>
+      <Description>Add Cleanup Cut To Long Waste</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddCleanupCutToLongWaste>
+    <AddDockCutToChordsWithAngleBelow>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Chords With Angle Below</Description>
+      <Units>deg</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToChordsWithAngleBelow>
+    <AddDockCutToMembersWiderThan>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Members Wider Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToMembersWiderThan>
+    <StackByNameAndPanel>
+      <Value>false</Value>
+      <Description>Only Stack Members Of Same Name And Panel</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StackByNameAndPanel>
+    <AddHandlingMaterialForOutfeedSupport>
+      <Value>true</Value>
+      <Description>Add Handling Material For Outfeed Support</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddHandlingMaterialForOutfeedSupport>
+    <RipCutSeperationToTrailingMember>
+      <Value>150</Value>
+      <Description>Rip Cut Separation to Trailing Member</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </RipCutSeperationToTrailingMember>
+    <ProduceOptimiserSummary>
+      <Value>false</Value>
+      <Description>Write a Summary Report for the Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ProduceOptimiserSummary>
+    <PresentOptimiserSummary>
+      <Value>false</Value>
+      <Description>Present the Summary Report after Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PresentOptimiserSummary>
+    <UseDefaultSettings>
+      <Value>true</Value>
+      <Description>Use Default Settings</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </UseDefaultSettings>
+  </CuttingSaw02>
+  <CuttingSaw03>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Saw #03 - Cutting</DisplayName>
+    <IsHidden>true</IsHidden>
+    <TrimCutAmount>
+      <Value>5</Value>
+      <Description>Trim Cut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </TrimCutAmount>
+    <MaxStackHeight>
+      <Value>1</Value>
+      <Description>Max Stack Height</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxStackHeight>
+    <ConcurrentTrusses>
+      <Value>3</Value>
+      <Description>Concurrent Trusses</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ConcurrentTrusses>
+    <StrictConcurrency>
+      <Value>false</Value>
+      <Description>Force single panel per stick (When 'Concurrent Trusses' = 1)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StrictConcurrency>
+    <EnableReuse>
+      <Value>true</Value>
+      <Description>Enable Waste Reuse</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </EnableReuse>
+    <MaxWasteLengthForReuse>
+      <Value>2399</Value>
+      <Description>Maximum Length Of Waste for Reuse</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxWasteLengthForReuse>
+    <UnstackShortSticks>
+      <Value>true</Value>
+      <Description>Unstack Short Sticks</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </UnstackShortSticks>
+    <AllowBirdsmouthCuts>
+      <Value>true</Value>
+      <Description>Allow Birdsmouth Cuts</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AllowBirdsmouthCuts>
+    <BridgeCutMinimumLength>
+      <Value>450</Value>
+      <Description>Bridge Cut Minimum Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </BridgeCutMinimumLength>
+    <OptimiseUsingNominalLengths>
+      <Value>false</Value>
+      <Description>Optimise Using Nominal Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </OptimiseUsingNominalLengths>
+    <SortByStockDimensions>
+      <Value>true</Value>
+      <Description>Sort by stock dimensions (When 'Concurrent Trusses' = 0)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </SortByStockDimensions>
+    <PreferShortStockLengths>
+      <Value>true</Value>
+      <Description>Prefer Short Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PreferShortStockLengths>
+    <MaxChordFlipLength>
+      <Value>900</Value>
+      <Description>Permit Flipping Of Chords Shorter Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxChordFlipLength>
+    <ReverseCuttingOrder>
+      <Value>false</Value>
+      <Description>Reverse Cutting Order</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ReverseCuttingOrder>
+    <AddCleanupCutToLongWaste>
+      <Value>true</Value>
+      <Description>Add Cleanup Cut To Long Waste</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddCleanupCutToLongWaste>
+    <AddDockCutToChordsWithAngleBelow>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Chords With Angle Below</Description>
+      <Units>deg</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToChordsWithAngleBelow>
+    <AddDockCutToMembersWiderThan>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Members Wider Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToMembersWiderThan>
+    <StackByNameAndPanel>
+      <Value>false</Value>
+      <Description>Only Stack Members Of Same Name And Panel</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StackByNameAndPanel>
+    <AddHandlingMaterialForOutfeedSupport>
+      <Value>true</Value>
+      <Description>Add Handling Material For Outfeed Support</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddHandlingMaterialForOutfeedSupport>
+    <RipCutSeperationToTrailingMember>
+      <Value>150</Value>
+      <Description>Rip Cut Separation to Trailing Member</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </RipCutSeperationToTrailingMember>
+    <ProduceOptimiserSummary>
+      <Value>false</Value>
+      <Description>Write a Summary Report for the Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ProduceOptimiserSummary>
+    <PresentOptimiserSummary>
+      <Value>false</Value>
+      <Description>Present the Summary Report after Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PresentOptimiserSummary>
+    <UseDefaultSettings>
+      <Value>true</Value>
+      <Description>Use Default Settings</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </UseDefaultSettings>
+  </CuttingSaw03>
+  <CuttingSaw04>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Saw #04 - Cutting</DisplayName>
+    <IsHidden>true</IsHidden>
+    <TrimCutAmount>
+      <Value>5</Value>
+      <Description>Trim Cut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </TrimCutAmount>
+    <MaxStackHeight>
+      <Value>1</Value>
+      <Description>Max Stack Height</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxStackHeight>
+    <ConcurrentTrusses>
+      <Value>2</Value>
+      <Description>Concurrent Trusses</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ConcurrentTrusses>
+    <StrictConcurrency>
+      <Value>true</Value>
+      <Description>Force single panel per stick (When 'Concurrent Trusses' = 1)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StrictConcurrency>
+    <EnableReuse>
+      <Value>true</Value>
+      <Description>Enable Waste Reuse</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </EnableReuse>
+    <MaxWasteLengthForReuse>
+      <Value>2399</Value>
+      <Description>Maximum Length Of Waste for Reuse</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxWasteLengthForReuse>
+    <UnstackShortSticks>
+      <Value>true</Value>
+      <Description>Unstack Short Sticks</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </UnstackShortSticks>
+    <AllowBirdsmouthCuts>
+      <Value>true</Value>
+      <Description>Allow Birdsmouth Cuts</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AllowBirdsmouthCuts>
+    <BridgeCutMinimumLength>
+      <Value>450</Value>
+      <Description>Bridge Cut Minimum Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </BridgeCutMinimumLength>
+    <OptimiseUsingNominalLengths>
+      <Value>false</Value>
+      <Description>Optimise Using Nominal Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </OptimiseUsingNominalLengths>
+    <SortByStockDimensions>
+      <Value>false</Value>
+      <Description>Sort by stock dimensions (When 'Concurrent Trusses' = 0)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </SortByStockDimensions>
+    <PreferShortStockLengths>
+      <Value>true</Value>
+      <Description>Prefer Short Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PreferShortStockLengths>
+    <MaxChordFlipLength>
+      <Value>900</Value>
+      <Description>Permit Flipping Of Chords Shorter Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxChordFlipLength>
+    <ReverseCuttingOrder>
+      <Value>false</Value>
+      <Description>Reverse Cutting Order</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ReverseCuttingOrder>
+    <AddCleanupCutToLongWaste>
+      <Value>true</Value>
+      <Description>Add Cleanup Cut To Long Waste</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddCleanupCutToLongWaste>
+    <AddDockCutToChordsWithAngleBelow>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Chords With Angle Below</Description>
+      <Units>deg</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToChordsWithAngleBelow>
+    <AddDockCutToMembersWiderThan>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Members Wider Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToMembersWiderThan>
+    <StackByNameAndPanel>
+      <Value>false</Value>
+      <Description>Only Stack Members Of Same Name And Panel</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StackByNameAndPanel>
+    <AddHandlingMaterialForOutfeedSupport>
+      <Value>true</Value>
+      <Description>Add Handling Material For Outfeed Support</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddHandlingMaterialForOutfeedSupport>
+    <RipCutSeperationToTrailingMember>
+      <Value>150</Value>
+      <Description>Rip Cut Separation to Trailing Member</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </RipCutSeperationToTrailingMember>
+    <ProduceOptimiserSummary>
+      <Value>false</Value>
+      <Description>Write a Summary Report for the Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ProduceOptimiserSummary>
+    <PresentOptimiserSummary>
+      <Value>false</Value>
+      <Description>Present the Summary Report after Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PresentOptimiserSummary>
+    <UseDefaultSettings>
+      <Value>true</Value>
+      <Description>Use Default Settings</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </UseDefaultSettings>
+  </CuttingSaw04>
+  <CuttingSaw05>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Saw #05 - Cutting</DisplayName>
+    <IsHidden>true</IsHidden>
+    <TrimCutAmount>
+      <Value>5</Value>
+      <Description>Trim Cut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </TrimCutAmount>
+    <MaxStackHeight>
+      <Value>1</Value>
+      <Description>Max Stack Height</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxStackHeight>
+    <ConcurrentTrusses>
+      <Value>3</Value>
+      <Description>Concurrent Trusses</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ConcurrentTrusses>
+    <StrictConcurrency>
+      <Value>false</Value>
+      <Description>Force single panel per stick (When 'Concurrent Trusses' = 1)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StrictConcurrency>
+    <EnableReuse>
+      <Value>true</Value>
+      <Description>Enable Waste Reuse</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </EnableReuse>
+    <MaxWasteLengthForReuse>
+      <Value>2399</Value>
+      <Description>Maximum Length Of Waste for Reuse</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxWasteLengthForReuse>
+    <UnstackShortSticks>
+      <Value>true</Value>
+      <Description>Unstack Short Sticks</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </UnstackShortSticks>
+    <AllowBirdsmouthCuts>
+      <Value>true</Value>
+      <Description>Allow Birdsmouth Cuts</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AllowBirdsmouthCuts>
+    <BridgeCutMinimumLength>
+      <Value>450</Value>
+      <Description>Bridge Cut Minimum Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </BridgeCutMinimumLength>
+    <OptimiseUsingNominalLengths>
+      <Value>false</Value>
+      <Description>Optimise Using Nominal Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </OptimiseUsingNominalLengths>
+    <SortByStockDimensions>
+      <Value>true</Value>
+      <Description>Sort by stock dimensions (When 'Concurrent Trusses' = 0)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </SortByStockDimensions>
+    <PreferShortStockLengths>
+      <Value>true</Value>
+      <Description>Prefer Short Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PreferShortStockLengths>
+    <MaxChordFlipLength>
+      <Value>900</Value>
+      <Description>Permit Flipping Of Chords Shorter Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxChordFlipLength>
+    <ReverseCuttingOrder>
+      <Value>false</Value>
+      <Description>Reverse Cutting Order</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ReverseCuttingOrder>
+    <AddCleanupCutToLongWaste>
+      <Value>true</Value>
+      <Description>Add Cleanup Cut To Long Waste</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddCleanupCutToLongWaste>
+    <AddDockCutToChordsWithAngleBelow>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Chords With Angle Below</Description>
+      <Units>deg</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToChordsWithAngleBelow>
+    <AddDockCutToMembersWiderThan>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Members Wider Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToMembersWiderThan>
+    <StackByNameAndPanel>
+      <Value>false</Value>
+      <Description>Only Stack Members Of Same Name And Panel</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StackByNameAndPanel>
+    <AddHandlingMaterialForOutfeedSupport>
+      <Value>true</Value>
+      <Description>Add Handling Material For Outfeed Support</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddHandlingMaterialForOutfeedSupport>
+    <RipCutSeperationToTrailingMember>
+      <Value>150</Value>
+      <Description>Rip Cut Separation to Trailing Member</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </RipCutSeperationToTrailingMember>
+    <ProduceOptimiserSummary>
+      <Value>false</Value>
+      <Description>Write a Summary Report for the Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ProduceOptimiserSummary>
+    <PresentOptimiserSummary>
+      <Value>false</Value>
+      <Description>Present the Summary Report after Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PresentOptimiserSummary>
+    <UseDefaultSettings>
+      <Value>true</Value>
+      <Description>Use Default Settings</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </UseDefaultSettings>
+  </CuttingSaw05>
+  <CuttingSaw06>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Saw #06 - Cutting</DisplayName>
+    <IsHidden>true</IsHidden>
+    <TrimCutAmount>
+      <Value>5</Value>
+      <Description>Trim Cut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </TrimCutAmount>
+    <MaxStackHeight>
+      <Value>1</Value>
+      <Description>Max Stack Height</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxStackHeight>
+    <ConcurrentTrusses>
+      <Value>0</Value>
+      <Description>Concurrent Trusses</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ConcurrentTrusses>
+    <StrictConcurrency>
+      <Value>false</Value>
+      <Description>Force single panel per stick (When 'Concurrent Trusses' = 1)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StrictConcurrency>
+    <EnableReuse>
+      <Value>true</Value>
+      <Description>Enable Waste Reuse</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </EnableReuse>
+    <MaxWasteLengthForReuse>
+      <Value>2399</Value>
+      <Description>Maximum Length Of Waste for Reuse</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxWasteLengthForReuse>
+    <UnstackShortSticks>
+      <Value>false</Value>
+      <Description>Unstack Short Sticks</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </UnstackShortSticks>
+    <AllowBirdsmouthCuts>
+      <Value>false</Value>
+      <Description>Allow Birdsmouth Cuts</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AllowBirdsmouthCuts>
+    <BridgeCutMinimumLength>
+      <Value>450</Value>
+      <Description>Bridge Cut Minimum Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </BridgeCutMinimumLength>
+    <OptimiseUsingNominalLengths>
+      <Value>false</Value>
+      <Description>Optimise Using Nominal Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </OptimiseUsingNominalLengths>
+    <SortByStockDimensions>
+      <Value>false</Value>
+      <Description>Sort by stock dimensions (When 'Concurrent Trusses' = 0)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </SortByStockDimensions>
+    <PreferShortStockLengths>
+      <Value>true</Value>
+      <Description>Prefer Short Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PreferShortStockLengths>
+    <MaxChordFlipLength>
+      <Value>900</Value>
+      <Description>Permit Flipping Of Chords Shorter Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxChordFlipLength>
+    <ReverseCuttingOrder>
+      <Value>false</Value>
+      <Description>Reverse Cutting Order</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ReverseCuttingOrder>
+    <AddCleanupCutToLongWaste>
+      <Value>true</Value>
+      <Description>Add Cleanup Cut To Long Waste</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddCleanupCutToLongWaste>
+    <AddDockCutToChordsWithAngleBelow>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Chords With Angle Below</Description>
+      <Units>deg</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToChordsWithAngleBelow>
+    <AddDockCutToMembersWiderThan>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Members Wider Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToMembersWiderThan>
+    <StackByNameAndPanel>
+      <Value>false</Value>
+      <Description>Only Stack Members Of Same Name And Panel</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StackByNameAndPanel>
+    <AddHandlingMaterialForOutfeedSupport>
+      <Value>true</Value>
+      <Description>Add Handling Material For Outfeed Support</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddHandlingMaterialForOutfeedSupport>
+    <RipCutSeperationToTrailingMember>
+      <Value>150</Value>
+      <Description>Rip Cut Separation to Trailing Member</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </RipCutSeperationToTrailingMember>
+    <ProduceOptimiserSummary>
+      <Value>false</Value>
+      <Description>Write a Summary Report for the Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ProduceOptimiserSummary>
+    <PresentOptimiserSummary>
+      <Value>false</Value>
+      <Description>Present the Summary Report after Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PresentOptimiserSummary>
+    <UseDefaultSettings>
+      <Value>true</Value>
+      <Description>Use Default Settings</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </UseDefaultSettings>
+  </CuttingSaw06>
+  <CuttingSaw07>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Saw #07 - Cutting</DisplayName>
+    <IsHidden>true</IsHidden>
+    <TrimCutAmount>
+      <Value>5</Value>
+      <Description>Trim Cut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </TrimCutAmount>
+    <MaxStackHeight>
+      <Value>1</Value>
+      <Description>Max Stack Height</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxStackHeight>
+    <ConcurrentTrusses>
+      <Value>3</Value>
+      <Description>Concurrent Trusses</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ConcurrentTrusses>
+    <StrictConcurrency>
+      <Value>false</Value>
+      <Description>Force single panel per stick (When 'Concurrent Trusses' = 1)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StrictConcurrency>
+    <EnableReuse>
+      <Value>true</Value>
+      <Description>Enable Waste Reuse</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </EnableReuse>
+    <MaxWasteLengthForReuse>
+      <Value>2399</Value>
+      <Description>Maximum Length Of Waste for Reuse</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxWasteLengthForReuse>
+    <UnstackShortSticks>
+      <Value>true</Value>
+      <Description>Unstack Short Sticks</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </UnstackShortSticks>
+    <AllowBirdsmouthCuts>
+      <Value>true</Value>
+      <Description>Allow Birdsmouth Cuts</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AllowBirdsmouthCuts>
+    <BridgeCutMinimumLength>
+      <Value>450</Value>
+      <Description>Bridge Cut Minimum Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </BridgeCutMinimumLength>
+    <OptimiseUsingNominalLengths>
+      <Value>false</Value>
+      <Description>Optimise Using Nominal Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </OptimiseUsingNominalLengths>
+    <SortByStockDimensions>
+      <Value>true</Value>
+      <Description>Sort by stock dimensions (When 'Concurrent Trusses' = 0)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </SortByStockDimensions>
+    <PreferShortStockLengths>
+      <Value>true</Value>
+      <Description>Prefer Short Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PreferShortStockLengths>
+    <MaxChordFlipLength>
+      <Value>900</Value>
+      <Description>Permit Flipping Of Chords Shorter Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxChordFlipLength>
+    <ReverseCuttingOrder>
+      <Value>false</Value>
+      <Description>Reverse Cutting Order</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ReverseCuttingOrder>
+    <AddCleanupCutToLongWaste>
+      <Value>true</Value>
+      <Description>Add Cleanup Cut To Long Waste</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddCleanupCutToLongWaste>
+    <AddDockCutToChordsWithAngleBelow>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Chords With Angle Below</Description>
+      <Units>deg</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToChordsWithAngleBelow>
+    <AddDockCutToMembersWiderThan>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Members Wider Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToMembersWiderThan>
+    <StackByNameAndPanel>
+      <Value>false</Value>
+      <Description>Only Stack Members Of Same Name And Panel</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StackByNameAndPanel>
+    <AddHandlingMaterialForOutfeedSupport>
+      <Value>true</Value>
+      <Description>Add Handling Material For Outfeed Support</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddHandlingMaterialForOutfeedSupport>
+    <RipCutSeperationToTrailingMember>
+      <Value>150</Value>
+      <Description>Rip Cut Separation to Trailing Member</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </RipCutSeperationToTrailingMember>
+    <ProduceOptimiserSummary>
+      <Value>false</Value>
+      <Description>Write a Summary Report for the Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ProduceOptimiserSummary>
+    <PresentOptimiserSummary>
+      <Value>false</Value>
+      <Description>Present the Summary Report after Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PresentOptimiserSummary>
+    <UseDefaultSettings>
+      <Value>true</Value>
+      <Description>Use Default Settings</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </UseDefaultSettings>
+  </CuttingSaw07>
+  <CuttingSaw08>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Saw #08 - Cutting</DisplayName>
+    <IsHidden>true</IsHidden>
+    <TrimCutAmount>
+      <Value>5</Value>
+      <Description>Trim Cut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </TrimCutAmount>
+    <MaxStackHeight>
+      <Value>1</Value>
+      <Description>Max Stack Height</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxStackHeight>
+    <ConcurrentTrusses>
+      <Value>3</Value>
+      <Description>Concurrent Trusses</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ConcurrentTrusses>
+    <StrictConcurrency>
+      <Value>false</Value>
+      <Description>Force single panel per stick (When 'Concurrent Trusses' = 1)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StrictConcurrency>
+    <EnableReuse>
+      <Value>true</Value>
+      <Description>Enable Waste Reuse</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </EnableReuse>
+    <MaxWasteLengthForReuse>
+      <Value>2399</Value>
+      <Description>Maximum Length Of Waste for Reuse</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxWasteLengthForReuse>
+    <UnstackShortSticks>
+      <Value>true</Value>
+      <Description>Unstack Short Sticks</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </UnstackShortSticks>
+    <AllowBirdsmouthCuts>
+      <Value>true</Value>
+      <Description>Allow Birdsmouth Cuts</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AllowBirdsmouthCuts>
+    <BridgeCutMinimumLength>
+      <Value>450</Value>
+      <Description>Bridge Cut Minimum Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </BridgeCutMinimumLength>
+    <OptimiseUsingNominalLengths>
+      <Value>false</Value>
+      <Description>Optimise Using Nominal Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </OptimiseUsingNominalLengths>
+    <SortByStockDimensions>
+      <Value>false</Value>
+      <Description>Sort by stock dimensions (When 'Concurrent Trusses' = 0)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </SortByStockDimensions>
+    <PreferShortStockLengths>
+      <Value>true</Value>
+      <Description>Prefer Short Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PreferShortStockLengths>
+    <MaxChordFlipLength>
+      <Value>900</Value>
+      <Description>Permit Flipping Of Chords Shorter Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxChordFlipLength>
+    <ReverseCuttingOrder>
+      <Value>false</Value>
+      <Description>Reverse Cutting Order</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ReverseCuttingOrder>
+    <AddCleanupCutToLongWaste>
+      <Value>true</Value>
+      <Description>Add Cleanup Cut To Long Waste</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddCleanupCutToLongWaste>
+    <AddDockCutToChordsWithAngleBelow>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Chords With Angle Below</Description>
+      <Units>deg</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToChordsWithAngleBelow>
+    <AddDockCutToMembersWiderThan>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Members Wider Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToMembersWiderThan>
+    <StackByNameAndPanel>
+      <Value>false</Value>
+      <Description>Only Stack Members Of Same Name And Panel</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StackByNameAndPanel>
+    <AddHandlingMaterialForOutfeedSupport>
+      <Value>true</Value>
+      <Description>Add Handling Material For Outfeed Support</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddHandlingMaterialForOutfeedSupport>
+    <RipCutSeperationToTrailingMember>
+      <Value>150</Value>
+      <Description>Rip Cut Separation to Trailing Member</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </RipCutSeperationToTrailingMember>
+    <ProduceOptimiserSummary>
+      <Value>false</Value>
+      <Description>Write a Summary Report for the Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ProduceOptimiserSummary>
+    <PresentOptimiserSummary>
+      <Value>false</Value>
+      <Description>Present the Summary Report after Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PresentOptimiserSummary>
+    <UseDefaultSettings>
+      <Value>true</Value>
+      <Description>Use Default Settings</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </UseDefaultSettings>
+  </CuttingSaw08>
+  <CuttingSaw09>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Saw #09 - Cutting</DisplayName>
+    <IsHidden>true</IsHidden>
+    <TrimCutAmount>
+      <Value>10</Value>
+      <Description>Trim Cut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </TrimCutAmount>
+    <MaxStackHeight>
+      <Value>2</Value>
+      <Description>Max Stack Height</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxStackHeight>
+    <ConcurrentTrusses>
+      <Value>0</Value>
+      <Description>Concurrent Trusses</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ConcurrentTrusses>
+    <StrictConcurrency>
+      <Value>false</Value>
+      <Description>Force single panel per stick (When 'Concurrent Trusses' = 1)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StrictConcurrency>
+    <EnableReuse>
+      <Value>false</Value>
+      <Description>Enable Waste Reuse</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </EnableReuse>
+    <MaxWasteLengthForReuse>
+      <Value>1500</Value>
+      <Description>Maximum Length Of Waste for Reuse</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxWasteLengthForReuse>
+    <UnstackShortSticks>
+      <Value>false</Value>
+      <Description>Unstack Short Sticks</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </UnstackShortSticks>
+    <AllowBirdsmouthCuts>
+      <Value>false</Value>
+      <Description>Allow Birdsmouth Cuts</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AllowBirdsmouthCuts>
+    <BridgeCutMinimumLength>
+      <Value>450</Value>
+      <Description>Bridge Cut Minimum Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </BridgeCutMinimumLength>
+    <OptimiseUsingNominalLengths>
+      <Value>false</Value>
+      <Description>Optimise Using Nominal Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </OptimiseUsingNominalLengths>
+    <SortByStockDimensions>
+      <Value>false</Value>
+      <Description>Sort by stock dimensions (When 'Concurrent Trusses' = 0)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </SortByStockDimensions>
+    <PreferShortStockLengths>
+      <Value>true</Value>
+      <Description>Prefer Short Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PreferShortStockLengths>
+    <MaxChordFlipLength>
+      <Value>900</Value>
+      <Description>Permit Flipping Of Chords Shorter Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxChordFlipLength>
+    <ReverseCuttingOrder>
+      <Value>false</Value>
+      <Description>Reverse Cutting Order</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ReverseCuttingOrder>
+    <AddCleanupCutToLongWaste>
+      <Value>true</Value>
+      <Description>Add Cleanup Cut To Long Waste</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddCleanupCutToLongWaste>
+    <AddDockCutToChordsWithAngleBelow>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Chords With Angle Below</Description>
+      <Units>deg</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToChordsWithAngleBelow>
+    <AddDockCutToMembersWiderThan>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Members Wider Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToMembersWiderThan>
+    <StackByNameAndPanel>
+      <Value>false</Value>
+      <Description>Only Stack Members Of Same Name And Panel</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StackByNameAndPanel>
+    <AddHandlingMaterialForOutfeedSupport>
+      <Value>true</Value>
+      <Description>Add Handling Material For Outfeed Support</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddHandlingMaterialForOutfeedSupport>
+    <RipCutSeperationToTrailingMember>
+      <Value>150</Value>
+      <Description>Rip Cut Separation to Trailing Member</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </RipCutSeperationToTrailingMember>
+    <ProduceOptimiserSummary>
+      <Value>false</Value>
+      <Description>Write a Summary Report for the Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ProduceOptimiserSummary>
+    <PresentOptimiserSummary>
+      <Value>false</Value>
+      <Description>Present the Summary Report after Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PresentOptimiserSummary>
+    <UseDefaultSettings>
+      <Value>true</Value>
+      <Description>Use Default Settings</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </UseDefaultSettings>
+  </CuttingSaw09>
+  <CuttingSaw10>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Saw #10 - Cutting</DisplayName>
+    <IsHidden>true</IsHidden>
+    <TrimCutAmount>
+      <Value>5</Value>
+      <Description>Trim Cut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </TrimCutAmount>
+    <MaxStackHeight>
+      <Value>2</Value>
+      <Description>Max Stack Height</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxStackHeight>
+    <ConcurrentTrusses>
+      <Value>0</Value>
+      <Description>Concurrent Trusses</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ConcurrentTrusses>
+    <StrictConcurrency>
+      <Value>false</Value>
+      <Description>Force single panel per stick (When 'Concurrent Trusses' = 1)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StrictConcurrency>
+    <EnableReuse>
+      <Value>true</Value>
+      <Description>Enable Waste Reuse</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </EnableReuse>
+    <MaxWasteLengthForReuse>
+      <Value>2399</Value>
+      <Description>Maximum Length Of Waste for Reuse</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxWasteLengthForReuse>
+    <UnstackShortSticks>
+      <Value>false</Value>
+      <Description>Unstack Short Sticks</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </UnstackShortSticks>
+    <AllowBirdsmouthCuts>
+      <Value>false</Value>
+      <Description>Allow Birdsmouth Cuts</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AllowBirdsmouthCuts>
+    <BridgeCutMinimumLength>
+      <Value>450</Value>
+      <Description>Bridge Cut Minimum Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </BridgeCutMinimumLength>
+    <OptimiseUsingNominalLengths>
+      <Value>false</Value>
+      <Description>Optimise Using Nominal Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </OptimiseUsingNominalLengths>
+    <SortByStockDimensions>
+      <Value>true</Value>
+      <Description>Sort by stock dimensions (When 'Concurrent Trusses' = 0)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </SortByStockDimensions>
+    <PreferShortStockLengths>
+      <Value>true</Value>
+      <Description>Prefer Short Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PreferShortStockLengths>
+    <MaxChordFlipLength>
+      <Value>900</Value>
+      <Description>Permit Flipping Of Chords Shorter Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxChordFlipLength>
+    <ReverseCuttingOrder>
+      <Value>false</Value>
+      <Description>Reverse Cutting Order</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ReverseCuttingOrder>
+    <AddCleanupCutToLongWaste>
+      <Value>true</Value>
+      <Description>Add Cleanup Cut To Long Waste</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddCleanupCutToLongWaste>
+    <AddDockCutToChordsWithAngleBelow>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Chords With Angle Below</Description>
+      <Units>deg</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToChordsWithAngleBelow>
+    <AddDockCutToMembersWiderThan>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Members Wider Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToMembersWiderThan>
+    <StackByNameAndPanel>
+      <Value>false</Value>
+      <Description>Only Stack Members Of Same Name And Panel</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StackByNameAndPanel>
+    <AddHandlingMaterialForOutfeedSupport>
+      <Value>true</Value>
+      <Description>Add Handling Material For Outfeed Support</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddHandlingMaterialForOutfeedSupport>
+    <RipCutSeperationToTrailingMember>
+      <Value>150</Value>
+      <Description>Rip Cut Separation to Trailing Member</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </RipCutSeperationToTrailingMember>
+    <ProduceOptimiserSummary>
+      <Value>false</Value>
+      <Description>Write a Summary Report for the Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ProduceOptimiserSummary>
+    <PresentOptimiserSummary>
+      <Value>false</Value>
+      <Description>Present the Summary Report after Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PresentOptimiserSummary>
+    <UseDefaultSettings>
+      <Value>true</Value>
+      <Description>Use Default Settings</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </UseDefaultSettings>
+  </CuttingSaw10>
+  <CuttingSaw11>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Saw #11 - Cutting</DisplayName>
+    <IsHidden>true</IsHidden>
+    <TrimCutAmount>
+      <Value>5</Value>
+      <Description>Trim Cut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </TrimCutAmount>
+    <MaxStackHeight>
+      <Value>1</Value>
+      <Description>Max Stack Height</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxStackHeight>
+    <ConcurrentTrusses>
+      <Value>0</Value>
+      <Description>Concurrent Trusses</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ConcurrentTrusses>
+    <StrictConcurrency>
+      <Value>false</Value>
+      <Description>Force single panel per stick (When 'Concurrent Trusses' = 1)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StrictConcurrency>
+    <EnableReuse>
+      <Value>true</Value>
+      <Description>Enable Waste Reuse</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </EnableReuse>
+    <MaxWasteLengthForReuse>
+      <Value>2399</Value>
+      <Description>Maximum Length Of Waste for Reuse</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxWasteLengthForReuse>
+    <UnstackShortSticks>
+      <Value>false</Value>
+      <Description>Unstack Short Sticks</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </UnstackShortSticks>
+    <AllowBirdsmouthCuts>
+      <Value>false</Value>
+      <Description>Allow Birdsmouth Cuts</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AllowBirdsmouthCuts>
+    <BridgeCutMinimumLength>
+      <Value>450</Value>
+      <Description>Bridge Cut Minimum Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </BridgeCutMinimumLength>
+    <OptimiseUsingNominalLengths>
+      <Value>false</Value>
+      <Description>Optimise Using Nominal Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </OptimiseUsingNominalLengths>
+    <SortByStockDimensions>
+      <Value>true</Value>
+      <Description>Sort by stock dimensions (When 'Concurrent Trusses' = 0)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </SortByStockDimensions>
+    <PreferShortStockLengths>
+      <Value>true</Value>
+      <Description>Prefer Short Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PreferShortStockLengths>
+    <MaxChordFlipLength>
+      <Value>900</Value>
+      <Description>Permit Flipping Of Chords Shorter Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxChordFlipLength>
+    <ReverseCuttingOrder>
+      <Value>false</Value>
+      <Description>Reverse Cutting Order</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ReverseCuttingOrder>
+    <AddCleanupCutToLongWaste>
+      <Value>true</Value>
+      <Description>Add Cleanup Cut To Long Waste</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddCleanupCutToLongWaste>
+    <AddDockCutToChordsWithAngleBelow>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Chords With Angle Below</Description>
+      <Units>deg</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToChordsWithAngleBelow>
+    <AddDockCutToMembersWiderThan>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Members Wider Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToMembersWiderThan>
+    <StackByNameAndPanel>
+      <Value>false</Value>
+      <Description>Only Stack Members Of Same Name And Panel</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StackByNameAndPanel>
+    <AddHandlingMaterialForOutfeedSupport>
+      <Value>true</Value>
+      <Description>Add Handling Material For Outfeed Support</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddHandlingMaterialForOutfeedSupport>
+    <RipCutSeperationToTrailingMember>
+      <Value>150</Value>
+      <Description>Rip Cut Separation to Trailing Member</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </RipCutSeperationToTrailingMember>
+    <ProduceOptimiserSummary>
+      <Value>false</Value>
+      <Description>Write a Summary Report for the Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ProduceOptimiserSummary>
+    <PresentOptimiserSummary>
+      <Value>false</Value>
+      <Description>Present the Summary Report after Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PresentOptimiserSummary>
+    <UseDefaultSettings>
+      <Value>true</Value>
+      <Description>Use Default Settings</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </UseDefaultSettings>
+  </CuttingSaw11>
+  <CuttingSaw12>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Saw #12 - Cutting</DisplayName>
+    <IsHidden>true</IsHidden>
+    <TrimCutAmount>
+      <Value>5</Value>
+      <Description>Trim Cut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </TrimCutAmount>
+    <MaxStackHeight>
+      <Value>1</Value>
+      <Description>Max Stack Height</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxStackHeight>
+    <ConcurrentTrusses>
+      <Value>0</Value>
+      <Description>Concurrent Trusses</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ConcurrentTrusses>
+    <StrictConcurrency>
+      <Value>false</Value>
+      <Description>Force single panel per stick (When 'Concurrent Trusses' = 1)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StrictConcurrency>
+    <EnableReuse>
+      <Value>true</Value>
+      <Description>Enable Waste Reuse</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </EnableReuse>
+    <MaxWasteLengthForReuse>
+      <Value>1500</Value>
+      <Description>Maximum Length Of Waste for Reuse</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxWasteLengthForReuse>
+    <UnstackShortSticks>
+      <Value>false</Value>
+      <Description>Unstack Short Sticks</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </UnstackShortSticks>
+    <AllowBirdsmouthCuts>
+      <Value>false</Value>
+      <Description>Allow Birdsmouth Cuts</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AllowBirdsmouthCuts>
+    <BridgeCutMinimumLength>
+      <Value>450</Value>
+      <Description>Bridge Cut Minimum Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </BridgeCutMinimumLength>
+    <OptimiseUsingNominalLengths>
+      <Value>false</Value>
+      <Description>Optimise Using Nominal Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </OptimiseUsingNominalLengths>
+    <SortByStockDimensions>
+      <Value>true</Value>
+      <Description>Sort by stock dimensions (When 'Concurrent Trusses' = 0)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </SortByStockDimensions>
+    <PreferShortStockLengths>
+      <Value>true</Value>
+      <Description>Prefer Short Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PreferShortStockLengths>
+    <MaxChordFlipLength>
+      <Value>900</Value>
+      <Description>Permit Flipping Of Chords Shorter Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxChordFlipLength>
+    <ReverseCuttingOrder>
+      <Value>false</Value>
+      <Description>Reverse Cutting Order</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ReverseCuttingOrder>
+    <AddCleanupCutToLongWaste>
+      <Value>true</Value>
+      <Description>Add Cleanup Cut To Long Waste</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddCleanupCutToLongWaste>
+    <AddDockCutToChordsWithAngleBelow>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Chords With Angle Below</Description>
+      <Units>deg</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToChordsWithAngleBelow>
+    <AddDockCutToMembersWiderThan>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Members Wider Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToMembersWiderThan>
+    <StackByNameAndPanel>
+      <Value>false</Value>
+      <Description>Only Stack Members Of Same Name And Panel</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StackByNameAndPanel>
+    <AddHandlingMaterialForOutfeedSupport>
+      <Value>true</Value>
+      <Description>Add Handling Material For Outfeed Support</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddHandlingMaterialForOutfeedSupport>
+    <RipCutSeperationToTrailingMember>
+      <Value>150</Value>
+      <Description>Rip Cut Separation to Trailing Member</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </RipCutSeperationToTrailingMember>
+    <ProduceOptimiserSummary>
+      <Value>false</Value>
+      <Description>Write a Summary Report for the Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ProduceOptimiserSummary>
+    <PresentOptimiserSummary>
+      <Value>false</Value>
+      <Description>Present the Summary Report after Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PresentOptimiserSummary>
+    <UseDefaultSettings>
+      <Value>true</Value>
+      <Description>Use Default Settings</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </UseDefaultSettings>
+  </CuttingSaw12>
+  <CuttingSaw13>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Saw #13 - Cutting</DisplayName>
+    <IsHidden>true</IsHidden>
+    <TrimCutAmount>
+      <Value>5</Value>
+      <Description>Trim Cut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </TrimCutAmount>
+    <MaxStackHeight>
+      <Value>1</Value>
+      <Description>Max Stack Height</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxStackHeight>
+    <ConcurrentTrusses>
+      <Value>3</Value>
+      <Description>Concurrent Trusses</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ConcurrentTrusses>
+    <StrictConcurrency>
+      <Value>false</Value>
+      <Description>Force single panel per stick (When 'Concurrent Trusses' = 1)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StrictConcurrency>
+    <EnableReuse>
+      <Value>true</Value>
+      <Description>Enable Waste Reuse</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </EnableReuse>
+    <MaxWasteLengthForReuse>
+      <Value>2399</Value>
+      <Description>Maximum Length Of Waste for Reuse</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxWasteLengthForReuse>
+    <UnstackShortSticks>
+      <Value>false</Value>
+      <Description>Unstack Short Sticks</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </UnstackShortSticks>
+    <AllowBirdsmouthCuts>
+      <Value>false</Value>
+      <Description>Allow Birdsmouth Cuts</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AllowBirdsmouthCuts>
+    <BridgeCutMinimumLength>
+      <Value>450</Value>
+      <Description>Bridge Cut Minimum Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </BridgeCutMinimumLength>
+    <OptimiseUsingNominalLengths>
+      <Value>false</Value>
+      <Description>Optimise Using Nominal Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </OptimiseUsingNominalLengths>
+    <SortByStockDimensions>
+      <Value>true</Value>
+      <Description>Sort by stock dimensions (When 'Concurrent Trusses' = 0)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </SortByStockDimensions>
+    <PreferShortStockLengths>
+      <Value>true</Value>
+      <Description>Prefer Short Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PreferShortStockLengths>
+    <MaxChordFlipLength>
+      <Value>900</Value>
+      <Description>Permit Flipping Of Chords Shorter Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxChordFlipLength>
+    <ReverseCuttingOrder>
+      <Value>false</Value>
+      <Description>Reverse Cutting Order</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ReverseCuttingOrder>
+    <AddCleanupCutToLongWaste>
+      <Value>true</Value>
+      <Description>Add Cleanup Cut To Long Waste</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddCleanupCutToLongWaste>
+    <AddDockCutToChordsWithAngleBelow>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Chords With Angle Below</Description>
+      <Units>deg</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToChordsWithAngleBelow>
+    <AddDockCutToMembersWiderThan>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Members Wider Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToMembersWiderThan>
+    <StackByNameAndPanel>
+      <Value>false</Value>
+      <Description>Only Stack Members Of Same Name And Panel</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StackByNameAndPanel>
+    <AddHandlingMaterialForOutfeedSupport>
+      <Value>true</Value>
+      <Description>Add Handling Material For Outfeed Support</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddHandlingMaterialForOutfeedSupport>
+    <RipCutSeperationToTrailingMember>
+      <Value>150</Value>
+      <Description>Rip Cut Separation to Trailing Member</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </RipCutSeperationToTrailingMember>
+    <ProduceOptimiserSummary>
+      <Value>false</Value>
+      <Description>Write a Summary Report for the Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ProduceOptimiserSummary>
+    <PresentOptimiserSummary>
+      <Value>false</Value>
+      <Description>Present the Summary Report after Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PresentOptimiserSummary>
+    <UseDefaultSettings>
+      <Value>true</Value>
+      <Description>Use Default Settings</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </UseDefaultSettings>
+  </CuttingSaw13>
+  <CuttingSaw14>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Saw #14 - Cutting</DisplayName>
+    <IsHidden>true</IsHidden>
+    <TrimCutAmount>
+      <Value>5</Value>
+      <Description>Trim Cut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </TrimCutAmount>
+    <MaxStackHeight>
+      <Value>1</Value>
+      <Description>Max Stack Height</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxStackHeight>
+    <ConcurrentTrusses>
+      <Value>3</Value>
+      <Description>Concurrent Trusses</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ConcurrentTrusses>
+    <StrictConcurrency>
+      <Value>false</Value>
+      <Description>Force single panel per stick (When 'Concurrent Trusses' = 1)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StrictConcurrency>
+    <EnableReuse>
+      <Value>true</Value>
+      <Description>Enable Waste Reuse</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </EnableReuse>
+    <MaxWasteLengthForReuse>
+      <Value>2399</Value>
+      <Description>Maximum Length Of Waste for Reuse</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxWasteLengthForReuse>
+    <UnstackShortSticks>
+      <Value>false</Value>
+      <Description>Unstack Short Sticks</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </UnstackShortSticks>
+    <AllowBirdsmouthCuts>
+      <Value>false</Value>
+      <Description>Allow Birdsmouth Cuts</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AllowBirdsmouthCuts>
+    <BridgeCutMinimumLength>
+      <Value>450</Value>
+      <Description>Bridge Cut Minimum Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </BridgeCutMinimumLength>
+    <OptimiseUsingNominalLengths>
+      <Value>false</Value>
+      <Description>Optimise Using Nominal Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </OptimiseUsingNominalLengths>
+    <SortByStockDimensions>
+      <Value>true</Value>
+      <Description>Sort by stock dimensions (When 'Concurrent Trusses' = 0)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </SortByStockDimensions>
+    <PreferShortStockLengths>
+      <Value>true</Value>
+      <Description>Prefer Short Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PreferShortStockLengths>
+    <MaxChordFlipLength>
+      <Value>900</Value>
+      <Description>Permit Flipping Of Chords Shorter Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxChordFlipLength>
+    <ReverseCuttingOrder>
+      <Value>false</Value>
+      <Description>Reverse Cutting Order</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ReverseCuttingOrder>
+    <AddCleanupCutToLongWaste>
+      <Value>true</Value>
+      <Description>Add Cleanup Cut To Long Waste</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddCleanupCutToLongWaste>
+    <AddDockCutToChordsWithAngleBelow>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Chords With Angle Below</Description>
+      <Units>deg</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToChordsWithAngleBelow>
+    <AddDockCutToMembersWiderThan>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Members Wider Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToMembersWiderThan>
+    <StackByNameAndPanel>
+      <Value>false</Value>
+      <Description>Only Stack Members Of Same Name And Panel</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StackByNameAndPanel>
+    <AddHandlingMaterialForOutfeedSupport>
+      <Value>true</Value>
+      <Description>Add Handling Material For Outfeed Support</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddHandlingMaterialForOutfeedSupport>
+    <RipCutSeperationToTrailingMember>
+      <Value>150</Value>
+      <Description>Rip Cut Separation to Trailing Member</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </RipCutSeperationToTrailingMember>
+    <ProduceOptimiserSummary>
+      <Value>false</Value>
+      <Description>Write a Summary Report for the Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ProduceOptimiserSummary>
+    <PresentOptimiserSummary>
+      <Value>false</Value>
+      <Description>Present the Summary Report after Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PresentOptimiserSummary>
+    <UseDefaultSettings>
+      <Value>true</Value>
+      <Description>Use Default Settings</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </UseDefaultSettings>
+  </CuttingSaw14>
+  <CuttingSaw15>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Saw #15 - Cutting</DisplayName>
+    <IsHidden>true</IsHidden>
+    <TrimCutAmount>
+      <Value>8</Value>
+      <Description>Trim Cut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </TrimCutAmount>
+    <MaxStackHeight>
+      <Value>1</Value>
+      <Description>Max Stack Height</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxStackHeight>
+    <ConcurrentTrusses>
+      <Value>0</Value>
+      <Description>Concurrent Trusses</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ConcurrentTrusses>
+    <StrictConcurrency>
+      <Value>false</Value>
+      <Description>Force single panel per stick (When 'Concurrent Trusses' = 1)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StrictConcurrency>
+    <EnableReuse>
+      <Value>true</Value>
+      <Description>Enable Waste Reuse</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </EnableReuse>
+    <MaxWasteLengthForReuse>
+      <Value>2399</Value>
+      <Description>Maximum Length Of Waste for Reuse</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxWasteLengthForReuse>
+    <UnstackShortSticks>
+      <Value>false</Value>
+      <Description>Unstack Short Sticks</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </UnstackShortSticks>
+    <AllowBirdsmouthCuts>
+      <Value>true</Value>
+      <Description>Allow Birdsmouth Cuts</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AllowBirdsmouthCuts>
+    <BridgeCutMinimumLength>
+      <Value>400</Value>
+      <Description>Bridge Cut Minimum Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </BridgeCutMinimumLength>
+    <OptimiseUsingNominalLengths>
+      <Value>false</Value>
+      <Description>Optimise Using Nominal Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </OptimiseUsingNominalLengths>
+    <SortByStockDimensions>
+      <Value>true</Value>
+      <Description>Sort by stock dimensions (When 'Concurrent Trusses' = 0)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </SortByStockDimensions>
+    <PreferShortStockLengths>
+      <Value>true</Value>
+      <Description>Prefer Short Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PreferShortStockLengths>
+    <MaxChordFlipLength>
+      <Value>900</Value>
+      <Description>Permit Flipping Of Chords Shorter Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxChordFlipLength>
+    <ReverseCuttingOrder>
+      <Value>false</Value>
+      <Description>Reverse Cutting Order</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ReverseCuttingOrder>
+    <AddCleanupCutToLongWaste>
+      <Value>true</Value>
+      <Description>Add Cleanup Cut To Long Waste</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddCleanupCutToLongWaste>
+    <AddDockCutToChordsWithAngleBelow>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Chords With Angle Below</Description>
+      <Units>deg</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToChordsWithAngleBelow>
+    <AddDockCutToMembersWiderThan>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Members Wider Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToMembersWiderThan>
+    <StackByNameAndPanel>
+      <Value>false</Value>
+      <Description>Only Stack Members Of Same Name And Panel</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StackByNameAndPanel>
+    <AddHandlingMaterialForOutfeedSupport>
+      <Value>true</Value>
+      <Description>Add Handling Material For Outfeed Support</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddHandlingMaterialForOutfeedSupport>
+    <RipCutSeperationToTrailingMember>
+      <Value>150</Value>
+      <Description>Rip Cut Separation to Trailing Member</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </RipCutSeperationToTrailingMember>
+    <ProduceOptimiserSummary>
+      <Value>false</Value>
+      <Description>Write a Summary Report for the Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ProduceOptimiserSummary>
+    <PresentOptimiserSummary>
+      <Value>false</Value>
+      <Description>Present the Summary Report after Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PresentOptimiserSummary>
+    <UseDefaultSettings>
+      <Value>true</Value>
+      <Description>Use Default Settings</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </UseDefaultSettings>
+  </CuttingSaw15>
+  <CuttingSaw16>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Saw #16 - Cutting</DisplayName>
+    <IsHidden>true</IsHidden>
+    <TrimCutAmount>
+      <Value>10</Value>
+      <Description>Trim Cut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </TrimCutAmount>
+    <MaxStackHeight>
+      <Value>1</Value>
+      <Description>Max Stack Height</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxStackHeight>
+    <ConcurrentTrusses>
+      <Value>3</Value>
+      <Description>Concurrent Trusses</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ConcurrentTrusses>
+    <StrictConcurrency>
+      <Value>false</Value>
+      <Description>Force single panel per stick (When 'Concurrent Trusses' = 1)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StrictConcurrency>
+    <EnableReuse>
+      <Value>false</Value>
+      <Description>Enable Waste Reuse</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </EnableReuse>
+    <MaxWasteLengthForReuse>
+      <Value>1500</Value>
+      <Description>Maximum Length Of Waste for Reuse</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxWasteLengthForReuse>
+    <UnstackShortSticks>
+      <Value>true</Value>
+      <Description>Unstack Short Sticks</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </UnstackShortSticks>
+    <AllowBirdsmouthCuts>
+      <Value>false</Value>
+      <Description>Allow Birdsmouth Cuts</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AllowBirdsmouthCuts>
+    <BridgeCutMinimumLength>
+      <Value>450</Value>
+      <Description>Bridge Cut Minimum Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </BridgeCutMinimumLength>
+    <OptimiseUsingNominalLengths>
+      <Value>false</Value>
+      <Description>Optimise Using Nominal Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </OptimiseUsingNominalLengths>
+    <SortByStockDimensions>
+      <Value>true</Value>
+      <Description>Sort by stock dimensions (When 'Concurrent Trusses' = 0)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </SortByStockDimensions>
+    <PreferShortStockLengths>
+      <Value>true</Value>
+      <Description>Prefer Short Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PreferShortStockLengths>
+    <MaxChordFlipLength>
+      <Value>900</Value>
+      <Description>Permit Flipping Of Chords Shorter Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxChordFlipLength>
+    <ReverseCuttingOrder>
+      <Value>false</Value>
+      <Description>Reverse Cutting Order</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ReverseCuttingOrder>
+    <AddCleanupCutToLongWaste>
+      <Value>true</Value>
+      <Description>Add Cleanup Cut To Long Waste</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddCleanupCutToLongWaste>
+    <AddDockCutToChordsWithAngleBelow>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Chords With Angle Below</Description>
+      <Units>deg</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToChordsWithAngleBelow>
+    <AddDockCutToMembersWiderThan>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Members Wider Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToMembersWiderThan>
+    <StackByNameAndPanel>
+      <Value>false</Value>
+      <Description>Only Stack Members Of Same Name And Panel</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StackByNameAndPanel>
+    <AddHandlingMaterialForOutfeedSupport>
+      <Value>true</Value>
+      <Description>Add Handling Material For Outfeed Support</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddHandlingMaterialForOutfeedSupport>
+    <RipCutSeperationToTrailingMember>
+      <Value>150</Value>
+      <Description>Rip Cut Separation to Trailing Member</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </RipCutSeperationToTrailingMember>
+    <ProduceOptimiserSummary>
+      <Value>false</Value>
+      <Description>Write a Summary Report for the Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ProduceOptimiserSummary>
+    <PresentOptimiserSummary>
+      <Value>false</Value>
+      <Description>Present the Summary Report after Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PresentOptimiserSummary>
+    <UseDefaultSettings>
+      <Value>true</Value>
+      <Description>Use Default Settings</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </UseDefaultSettings>
+  </CuttingSaw16>
+  <CuttingSaw17>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Saw #17 - Cutting</DisplayName>
+    <IsHidden>true</IsHidden>
+    <TrimCutAmount>
+      <Value>5</Value>
+      <Description>Trim Cut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </TrimCutAmount>
+    <MaxStackHeight>
+      <Value>2</Value>
+      <Description>Max Stack Height</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxStackHeight>
+    <ConcurrentTrusses>
+      <Value>3</Value>
+      <Description>Concurrent Trusses</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ConcurrentTrusses>
+    <StrictConcurrency>
+      <Value>false</Value>
+      <Description>Force single panel per stick (When 'Concurrent Trusses' = 1)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StrictConcurrency>
+    <EnableReuse>
+      <Value>true</Value>
+      <Description>Enable Waste Reuse</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </EnableReuse>
+    <MaxWasteLengthForReuse>
+      <Value>2399</Value>
+      <Description>Maximum Length Of Waste for Reuse</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxWasteLengthForReuse>
+    <UnstackShortSticks>
+      <Value>false</Value>
+      <Description>Unstack Short Sticks</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </UnstackShortSticks>
+    <AllowBirdsmouthCuts>
+      <Value>false</Value>
+      <Description>Allow Birdsmouth Cuts</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AllowBirdsmouthCuts>
+    <BridgeCutMinimumLength>
+      <Value>450</Value>
+      <Description>Bridge Cut Minimum Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </BridgeCutMinimumLength>
+    <OptimiseUsingNominalLengths>
+      <Value>false</Value>
+      <Description>Optimise Using Nominal Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </OptimiseUsingNominalLengths>
+    <SortByStockDimensions>
+      <Value>true</Value>
+      <Description>Sort by stock dimensions (When 'Concurrent Trusses' = 0)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </SortByStockDimensions>
+    <PreferShortStockLengths>
+      <Value>true</Value>
+      <Description>Prefer Short Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PreferShortStockLengths>
+    <MaxChordFlipLength>
+      <Value>900</Value>
+      <Description>Permit Flipping Of Chords Shorter Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxChordFlipLength>
+    <ReverseCuttingOrder>
+      <Value>false</Value>
+      <Description>Reverse Cutting Order</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ReverseCuttingOrder>
+    <AddCleanupCutToLongWaste>
+      <Value>true</Value>
+      <Description>Add Cleanup Cut To Long Waste</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddCleanupCutToLongWaste>
+    <AddDockCutToChordsWithAngleBelow>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Chords With Angle Below</Description>
+      <Units>deg</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToChordsWithAngleBelow>
+    <AddDockCutToMembersWiderThan>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Members Wider Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToMembersWiderThan>
+    <StackByNameAndPanel>
+      <Value>false</Value>
+      <Description>Only Stack Members Of Same Name And Panel</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StackByNameAndPanel>
+    <AddHandlingMaterialForOutfeedSupport>
+      <Value>true</Value>
+      <Description>Add Handling Material For Outfeed Support</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddHandlingMaterialForOutfeedSupport>
+    <RipCutSeperationToTrailingMember>
+      <Value>150</Value>
+      <Description>Rip Cut Separation to Trailing Member</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </RipCutSeperationToTrailingMember>
+    <ProduceOptimiserSummary>
+      <Value>false</Value>
+      <Description>Write a Summary Report for the Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ProduceOptimiserSummary>
+    <PresentOptimiserSummary>
+      <Value>false</Value>
+      <Description>Present the Summary Report after Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PresentOptimiserSummary>
+    <UseDefaultSettings>
+      <Value>true</Value>
+      <Description>Use Default Settings</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </UseDefaultSettings>
+  </CuttingSaw17>
+  <CuttingSaw18>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Saw #18 - Cutting</DisplayName>
+    <IsHidden>true</IsHidden>
+    <TrimCutAmount>
+      <Value>5</Value>
+      <Description>Trim Cut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </TrimCutAmount>
+    <MaxStackHeight>
+      <Value>1</Value>
+      <Description>Max Stack Height</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxStackHeight>
+    <ConcurrentTrusses>
+      <Value>3</Value>
+      <Description>Concurrent Trusses</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ConcurrentTrusses>
+    <StrictConcurrency>
+      <Value>false</Value>
+      <Description>Force single panel per stick (When 'Concurrent Trusses' = 1)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StrictConcurrency>
+    <EnableReuse>
+      <Value>true</Value>
+      <Description>Enable Waste Reuse</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </EnableReuse>
+    <MaxWasteLengthForReuse>
+      <Value>2399</Value>
+      <Description>Maximum Length Of Waste for Reuse</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxWasteLengthForReuse>
+    <UnstackShortSticks>
+      <Value>false</Value>
+      <Description>Unstack Short Sticks</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </UnstackShortSticks>
+    <AllowBirdsmouthCuts>
+      <Value>false</Value>
+      <Description>Allow Birdsmouth Cuts</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AllowBirdsmouthCuts>
+    <BridgeCutMinimumLength>
+      <Value>450</Value>
+      <Description>Bridge Cut Minimum Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </BridgeCutMinimumLength>
+    <OptimiseUsingNominalLengths>
+      <Value>false</Value>
+      <Description>Optimise Using Nominal Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </OptimiseUsingNominalLengths>
+    <SortByStockDimensions>
+      <Value>true</Value>
+      <Description>Sort by stock dimensions (When 'Concurrent Trusses' = 0)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </SortByStockDimensions>
+    <PreferShortStockLengths>
+      <Value>true</Value>
+      <Description>Prefer Short Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PreferShortStockLengths>
+    <MaxChordFlipLength>
+      <Value>900</Value>
+      <Description>Permit Flipping Of Chords Shorter Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxChordFlipLength>
+    <ReverseCuttingOrder>
+      <Value>false</Value>
+      <Description>Reverse Cutting Order</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ReverseCuttingOrder>
+    <AddCleanupCutToLongWaste>
+      <Value>true</Value>
+      <Description>Add Cleanup Cut To Long Waste</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddCleanupCutToLongWaste>
+    <AddDockCutToChordsWithAngleBelow>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Chords With Angle Below</Description>
+      <Units>deg</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToChordsWithAngleBelow>
+    <AddDockCutToMembersWiderThan>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Members Wider Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToMembersWiderThan>
+    <StackByNameAndPanel>
+      <Value>false</Value>
+      <Description>Only Stack Members Of Same Name And Panel</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StackByNameAndPanel>
+    <AddHandlingMaterialForOutfeedSupport>
+      <Value>true</Value>
+      <Description>Add Handling Material For Outfeed Support</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddHandlingMaterialForOutfeedSupport>
+    <RipCutSeperationToTrailingMember>
+      <Value>150</Value>
+      <Description>Rip Cut Separation to Trailing Member</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </RipCutSeperationToTrailingMember>
+    <ProduceOptimiserSummary>
+      <Value>false</Value>
+      <Description>Write a Summary Report for the Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ProduceOptimiserSummary>
+    <PresentOptimiserSummary>
+      <Value>false</Value>
+      <Description>Present the Summary Report after Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PresentOptimiserSummary>
+    <UseDefaultSettings>
+      <Value>true</Value>
+      <Description>Use Default Settings</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </UseDefaultSettings>
+  </CuttingSaw18>
+  <CuttingSaw19>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Saw #19 - Cutting</DisplayName>
+    <IsHidden>true</IsHidden>
+    <TrimCutAmount>
+      <Value>10</Value>
+      <Description>Trim Cut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </TrimCutAmount>
+    <MaxStackHeight>
+      <Value>1</Value>
+      <Description>Max Stack Height</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxStackHeight>
+    <ConcurrentTrusses>
+      <Value>3</Value>
+      <Description>Concurrent Trusses</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ConcurrentTrusses>
+    <StrictConcurrency>
+      <Value>false</Value>
+      <Description>Force single panel per stick (When 'Concurrent Trusses' = 1)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StrictConcurrency>
+    <EnableReuse>
+      <Value>false</Value>
+      <Description>Enable Waste Reuse</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </EnableReuse>
+    <MaxWasteLengthForReuse>
+      <Value>1500</Value>
+      <Description>Maximum Length Of Waste for Reuse</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxWasteLengthForReuse>
+    <UnstackShortSticks>
+      <Value>false</Value>
+      <Description>Unstack Short Sticks</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </UnstackShortSticks>
+    <AllowBirdsmouthCuts>
+      <Value>false</Value>
+      <Description>Allow Birdsmouth Cuts</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AllowBirdsmouthCuts>
+    <BridgeCutMinimumLength>
+      <Value>450</Value>
+      <Description>Bridge Cut Minimum Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </BridgeCutMinimumLength>
+    <OptimiseUsingNominalLengths>
+      <Value>false</Value>
+      <Description>Optimise Using Nominal Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </OptimiseUsingNominalLengths>
+    <SortByStockDimensions>
+      <Value>false</Value>
+      <Description>Sort by stock dimensions (When 'Concurrent Trusses' = 0)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </SortByStockDimensions>
+    <PreferShortStockLengths>
+      <Value>true</Value>
+      <Description>Prefer Short Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PreferShortStockLengths>
+    <MaxChordFlipLength>
+      <Value>900</Value>
+      <Description>Permit Flipping Of Chords Shorter Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxChordFlipLength>
+    <ReverseCuttingOrder>
+      <Value>false</Value>
+      <Description>Reverse Cutting Order</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ReverseCuttingOrder>
+    <AddCleanupCutToLongWaste>
+      <Value>true</Value>
+      <Description>Add Cleanup Cut To Long Waste</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddCleanupCutToLongWaste>
+    <AddDockCutToChordsWithAngleBelow>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Chords With Angle Below</Description>
+      <Units>deg</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToChordsWithAngleBelow>
+    <AddDockCutToMembersWiderThan>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Members Wider Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToMembersWiderThan>
+    <StackByNameAndPanel>
+      <Value>false</Value>
+      <Description>Only Stack Members Of Same Name And Panel</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StackByNameAndPanel>
+    <AddHandlingMaterialForOutfeedSupport>
+      <Value>true</Value>
+      <Description>Add Handling Material For Outfeed Support</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddHandlingMaterialForOutfeedSupport>
+    <RipCutSeperationToTrailingMember>
+      <Value>150</Value>
+      <Description>Rip Cut Separation to Trailing Member</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </RipCutSeperationToTrailingMember>
+    <ProduceOptimiserSummary>
+      <Value>false</Value>
+      <Description>Write a Summary Report for the Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ProduceOptimiserSummary>
+    <PresentOptimiserSummary>
+      <Value>false</Value>
+      <Description>Present the Summary Report after Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PresentOptimiserSummary>
+    <UseDefaultSettings>
+      <Value>true</Value>
+      <Description>Use Default Settings</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </UseDefaultSettings>
+  </CuttingSaw19>
+  <CuttingSaw20>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Saw #20 - Cutting</DisplayName>
+    <IsHidden>true</IsHidden>
+    <TrimCutAmount>
+      <Value>10</Value>
+      <Description>Trim Cut Amount</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </TrimCutAmount>
+    <MaxStackHeight>
+      <Value>2</Value>
+      <Description>Max Stack Height</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxStackHeight>
+    <ConcurrentTrusses>
+      <Value>0</Value>
+      <Description>Concurrent Trusses</Description>
+      <Units />
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ConcurrentTrusses>
+    <StrictConcurrency>
+      <Value>false</Value>
+      <Description>Force single panel per stick (When 'Concurrent Trusses' = 1)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StrictConcurrency>
+    <EnableReuse>
+      <Value>false</Value>
+      <Description>Enable Waste Reuse</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </EnableReuse>
+    <MaxWasteLengthForReuse>
+      <Value>1500</Value>
+      <Description>Maximum Length Of Waste for Reuse</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxWasteLengthForReuse>
+    <UnstackShortSticks>
+      <Value>false</Value>
+      <Description>Unstack Short Sticks</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Stock</Group>
+      <Editable>true</Editable>
+    </UnstackShortSticks>
+    <AllowBirdsmouthCuts>
+      <Value>false</Value>
+      <Description>Allow Birdsmouth Cuts</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AllowBirdsmouthCuts>
+    <BridgeCutMinimumLength>
+      <Value>450</Value>
+      <Description>Bridge Cut Minimum Length</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </BridgeCutMinimumLength>
+    <OptimiseUsingNominalLengths>
+      <Value>false</Value>
+      <Description>Optimise Using Nominal Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </OptimiseUsingNominalLengths>
+    <SortByStockDimensions>
+      <Value>false</Value>
+      <Description>Sort by stock dimensions (When 'Concurrent Trusses' = 0)</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </SortByStockDimensions>
+    <PreferShortStockLengths>
+      <Value>true</Value>
+      <Description>Prefer Short Stock Lengths</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PreferShortStockLengths>
+    <MaxChordFlipLength>
+      <Value>900</Value>
+      <Description>Permit Flipping Of Chords Shorter Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </MaxChordFlipLength>
+    <ReverseCuttingOrder>
+      <Value>false</Value>
+      <Description>Reverse Cutting Order</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ReverseCuttingOrder>
+    <AddCleanupCutToLongWaste>
+      <Value>true</Value>
+      <Description>Add Cleanup Cut To Long Waste</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddCleanupCutToLongWaste>
+    <AddDockCutToChordsWithAngleBelow>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Chords With Angle Below</Description>
+      <Units>deg</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToChordsWithAngleBelow>
+    <AddDockCutToMembersWiderThan>
+      <Value>0</Value>
+      <Description>Add Dock Cut To Members Wider Than</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddDockCutToMembersWiderThan>
+    <StackByNameAndPanel>
+      <Value>false</Value>
+      <Description>Only Stack Members Of Same Name And Panel</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </StackByNameAndPanel>
+    <AddHandlingMaterialForOutfeedSupport>
+      <Value>true</Value>
+      <Description>Add Handling Material For Outfeed Support</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </AddHandlingMaterialForOutfeedSupport>
+    <RipCutSeperationToTrailingMember>
+      <Value>150</Value>
+      <Description>Rip Cut Separation to Trailing Member</Description>
+      <Units>mm</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </RipCutSeperationToTrailingMember>
+    <ProduceOptimiserSummary>
+      <Value>false</Value>
+      <Description>Write a Summary Report for the Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </ProduceOptimiserSummary>
+    <PresentOptimiserSummary>
+      <Value>false</Value>
+      <Description>Present the Summary Report after Optimisation</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </PresentOptimiserSummary>
+    <UseDefaultSettings>
+      <Value>true</Value>
+      <Description>Use Default Settings</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </UseDefaultSettings>
+  </CuttingSaw20>
+</OptimiserSettings>

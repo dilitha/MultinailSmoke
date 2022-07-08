@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BatchSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BatchExportSettings>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Export</DisplayName>
+    <IsHidden>false</IsHidden>
+    <Enabled>
+      <Value>false</Value>
+      <Description>Enable Batch Export</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Batch</Group>
+      <Editable>true</Editable>
+    </Enabled>
+    <BatchExportDataDirectory>
+      <Value />
+      <Description>Batch Export Data Directory</Description>
+      <Units />
+      <Group>Batch</Group>
+      <Editable>true</Editable>
+    </BatchExportDataDirectory>
+    <BatchExportDestination01>
+      <Value />
+      <Description>Export Destination #1</Description>
+      <Units />
+      <Group>Batch</Group>
+      <Editable>true</Editable>
+    </BatchExportDestination01>
+    <BatchExportDestination02>
+      <Value />
+      <Description>Export Destination #2</Description>
+      <Units />
+      <Group>Batch</Group>
+      <Editable>true</Editable>
+    </BatchExportDestination02>
+    <BatchExportDestination03>
+      <Value />
+      <Description>Export Destination #3</Description>
+      <Units />
+      <Group>Batch</Group>
+      <Editable>true</Editable>
+    </BatchExportDestination03>
+    <BatchExportDestination04>
+      <Value />
+      <Description>Export Destination #4</Description>
+      <Units />
+      <Group>Batch</Group>
+      <Editable>true</Editable>
+    </BatchExportDestination04>
+    <BatchExportDestination05>
+      <Value />
+      <Description>Export Destination #5</Description>
+      <Units />
+      <Group>Batch</Group>
+      <Editable>true</Editable>
+    </BatchExportDestination05>
+    <BatchExportDestination06>
+      <Value />
+      <Description>Export Destination #6</Description>
+      <Units />
+      <Group>Batch</Group>
+      <Editable>true</Editable>
+    </BatchExportDestination06>
+    <BatchExportDestination07>
+      <Value />
+      <Description>Export Destination #7</Description>
+      <Units />
+      <Group>Batch</Group>
+      <Editable>true</Editable>
+    </BatchExportDestination07>
+    <BatchExportDestination08>
+      <Value />
+      <Description>Export Destination #8</Description>
+      <Units />
+      <Group>Batch</Group>
+      <Editable>true</Editable>
+    </BatchExportDestination08>
+    <BatchExportDestination09>
+      <Value />
+      <Description>Export Destination #9</Description>
+      <Units />
+      <Group>Batch</Group>
+      <Editable>true</Editable>
+    </BatchExportDestination09>
+    <BatchExportDestination10>
+      <Value />
+      <Description>Export Destination #10</Description>
+      <Units />
+      <Group>Batch</Group>
+      <Editable>true</Editable>
+    </BatchExportDestination10>
+  </BatchExportSettings>
+  <BatchImportSettings>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Import</DisplayName>
+    <IsHidden>false</IsHidden>
+    <Enabled>
+      <Value>false</Value>
+      <Description>Enable Batch Import</Description>
+      <Units />
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Batch</Group>
+      <Editable>true</Editable>
+    </Enabled>
+    <BatchImportDataDirectory>
+      <Value />
+      <Description>Batch Import Data Directory</Description>
+      <Units />
+      <Group>Batch</Group>
+      <Editable>true</Editable>
+    </BatchImportDataDirectory>
+  </BatchImportSettings>
+</BatchSettings>

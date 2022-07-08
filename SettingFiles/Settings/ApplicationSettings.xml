@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ApplicationSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <UI>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>User Interface</DisplayName>
+    <IsHidden>false</IsHidden>
+    <FullScreen>
+      <Value>false</Value>
+      <Description>Full Screen</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>User Interface</Group>
+      <Editable>true</Editable>
+    </FullScreen>
+    <HideMouseCursor>
+      <Value>false</Value>
+      <Description>Hide Mouse Cursor</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>User Interface</Group>
+      <Editable>true</Editable>
+    </HideMouseCursor>
+    <SnackbarMessageTimeout>
+      <Value>30</Value>
+      <Description>Snackbar Message Timeout</Description>
+      <Units>s</Units>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>User Interface</Group>
+      <Editable>true</Editable>
+    </SnackbarMessageTimeout>
+    <HighlightInfeedChanges>
+      <Value>true</Value>
+      <Description>Highlight Infeed Changes</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>User Interface</Group>
+      <Editable>true</Editable>
+    </HighlightInfeedChanges>
+    <UnitSelection>
+      <Value>mm</Value>
+      <Description>Units (restart required)</Description>
+      <Min>mm</Min>
+      <Max>mm</Max>
+      <Group>User Interface</Group>
+      <Editable>true</Editable>
+    </UnitSelection>
+    <UseSpidaTheme>
+      <Value>false</Value>
+      <Description>Use Spida Theme (restart required)</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>User Interface</Group>
+      <Editable>true</Editable>
+    </UseSpidaTheme>
+  </UI>
+  <Admin>
+    <AccessLevel>Administrator</AccessLevel>
+    <DisplayName>Administrator</DisplayName>
+    <IsHidden>false</IsHidden>
+    <EnableFMS>
+      <Value>false</Value>
+      <Description>Enable the FMS Service (requires restart)</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>FMS</Group>
+      <Editable>true</Editable>
+    </EnableFMS>
+    <RemoteDesktopAppPath>
+      <Value>C:\Program Files (x86)\TeamViewer\TeamViewer.exe</Value>
+      <Description>Remote Desktop App</Description>
+      <Group>Support</Group>
+      <Editable>true</Editable>
+    </RemoteDesktopAppPath>
+    <LogDebugMessages>
+      <Value>true</Value>
+      <Description>Log Debug Messages</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Support</Group>
+      <Editable>true</Editable>
+    </LogDebugMessages>
+    <EnableMachineLog>
+      <Value>true</Value>
+      <Description>Enable Machine Log</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Support</Group>
+      <Editable>true</Editable>
+    </EnableMachineLog>
+    <JobsPath>
+      <Value />
+      <Description>Job Files Directory</Description>
+      <Group>Jobs</Group>
+      <Editable>true</Editable>
+    </JobsPath>
+    <JobsPath2>
+      <Value />
+      <Description>Job Files Directory 2</Description>
+      <Group>Jobs</Group>
+      <Editable>true</Editable>
+    </JobsPath2>
+    <JobsPath3>
+      <Value />
+      <Description>Job Files Directory 3</Description>
+      <Group>Jobs</Group>
+      <Editable>true</Editable>
+    </JobsPath3>
+    <DefaultJobLoader>
+      <Value>FMS</Value>
+      <Description>Default Job Loader</Description>
+      <Min>PLUGIN</Min>
+      <Max>PLUGIN</Max>
+      <Group>Jobs</Group>
+      <Editable>true</Editable>
+    </DefaultJobLoader>
+    <MitekJobsSupportMitresBothEnds>
+      <Value>false</Value>
+      <Description>Mitek Jobs Support Mitres Both Ends</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Jobs</Group>
+      <Editable>true</Editable>
+    </MitekJobsSupportMitresBothEnds>
+    <ChordIdentificationList>
+      <Value>TC,BC</Value>
+      <Description>Chord Identification List</Description>
+      <Group>Jobs</Group>
+      <Editable>true</Editable>
+    </ChordIdentificationList>
+    <CutDownChordIdentificationList>
+      <Value>CDTC</Value>
+      <Description>Cut Down Chord Identification List</Description>
+      <Group>Jobs</Group>
+      <Editable>true</Editable>
+    </CutDownChordIdentificationList>
+    <LockChordOrientationAsImported>
+      <Value>true</Value>
+      <Description>Lock chord orientation as imported</Description>
+      <Units>mm</Units>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cutting</Group>
+      <Editable>true</Editable>
+    </LockChordOrientationAsImported>
+    <UpdatePath>
+      <Value>C:\BitBucket Repositories\MultiControl\Releases</Value>
+      <Description>Update Path</Description>
+      <Group>Updates</Group>
+      <Editable>true</Editable>
+    </UpdatePath>
+    <AutomaticUpdates>
+      <Value>false</Value>
+      <Description>Automatic Updates</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Updates</Group>
+      <Editable>true</Editable>
+    </AutomaticUpdates>
+    <MachineConfigFile>
+      <Value />
+      <Description>Machine Config File</Description>
+      <Group>Updates</Group>
+      <Editable>true</Editable>
+    </MachineConfigFile>
+    <DailyReportService>
+      <Value>true</Value>
+      <Description>Daily Report Service</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Support</Group>
+      <Editable>true</Editable>
+    </DailyReportService>
+    <DailyReportEmailAddresses>
+      <Value />
+      <Description>Daily Report Email Addresses</Description>
+      <Group>Support</Group>
+      <Editable>true</Editable>
+    </DailyReportEmailAddresses>
+    <SerialNumber>
+      <Value>SIM-026</Value>
+      <Description>Serial Number</Description>
+      <Group>Identification</Group>
+      <Editable>true</Editable>
+    </SerialNumber>
+    <ClientName>
+      <Value>Dilitha Vithanage</Value>
+      <Description>Client Name</Description>
+      <Group>Identification</Group>
+      <Editable>true</Editable>
+    </ClientName>
+    <Location>
+      <Value>Pakenham</Value>
+      <Description>Site Location</Description>
+      <Group>Identification</Group>
+      <Editable>true</Editable>
+    </Location>
+    <SupportEmailAddress>
+      <Value />
+      <Description>Support Email Address</Description>
+      <Group>Support</Group>
+      <Editable>true</Editable>
+    </SupportEmailAddress>
+    <SMTPMailServer>
+      <Value />
+      <Description>SMTP Mail Server</Description>
+      <Group>Support</Group>
+      <Editable>true</Editable>
+    </SMTPMailServer>
+    <SMTPPort>
+      <Value>0</Value>
+      <Description>SMTP Port</Description>
+      <Min>0</Min>
+      <Max>0</Max>
+      <Group>Support</Group>
+      <Editable>true</Editable>
+    </SMTPPort>
+    <SMTPUserName>
+      <Value />
+      <Description>SMTP UserName</Description>
+      <Group>Support</Group>
+      <Editable>true</Editable>
+    </SMTPUserName>
+    <SMTPPassword>
+      <Value />
+      <Description>SMTP Password</Description>
+      <Group>Support</Group>
+      <Editable>true</Editable>
+    </SMTPPassword>
+    <EnablePlugins>
+      <Value>true</Value>
+      <Description>Enable Plugins</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Jobs</Group>
+      <Editable>true</Editable>
+    </EnablePlugins>
+    <UseMemberRoleDefinitions>
+      <Value>false</Value>
+      <Description>Use Member Role Definitions</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Jobs</Group>
+      <Editable>true</Editable>
+    </UseMemberRoleDefinitions>
+    <MemberRoleDefinitionPath>
+      <Value />
+      <Description>Member Role Definition File Path</Description>
+      <Group>Jobs</Group>
+      <Editable>true</Editable>
+    </MemberRoleDefinitionPath>
+  </Admin>
+  <CloudSettings>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Cloud Dashboard</DisplayName>
+    <IsHidden>false</IsHidden>
+    <EnableCloudReporting>
+      <Value>true</Value>
+      <Description>Enable Cloud Reporting</Description>
+      <Min>false</Min>
+      <Max>false</Max>
+      <Group>Cloud</Group>
+      <Editable>true</Editable>
+    </EnableCloudReporting>
+  </CloudSettings>
+  <StackingSettings>
+    <AccessLevel>Supervisor</AccessLevel>
+    <DisplayName>Stack Ordering</DisplayName>
+    <IsHidden>false</IsHidden>
+    <StackSequenceNumbering>
+      <Value>Use_Job_Assigned_Stack_Ordering</Value>
+      <Description>Apply Member Stack Order Sequences</Description>
+      <Min>Use_Job_Identical_Panels_Same_Number</Min>
+      <Max>Use_Job_Identical_Panels_Same_Number</Max>
+      <Group>Stack</Group>
+      <Editable>true</Editable>
+    </StackSequenceNumbering>
+  </StackingSettings>
+</ApplicationSettings>

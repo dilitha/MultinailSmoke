@@ -1,0 +1,43 @@
+String|ServerName|Computer Name Hosting the FMS Database||HELPDESK|||
+String|ServerPath|Hosting Path for the FMS Database||FMS|||
+Long|StationIdentifier|Station Identifier for this Machine||1|||
+String|SawNumbers|Saw Number(s) to assign to this Machine||0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20|||
+Option|UserName|Name of Factory Worker operating this Machine||Operator|||DAY SHIFT,NIGHT SHIFT,BOB,FRED,SAM
+Option|DataInterest|Reporting Data Interest of this Machine||SAW|||SAW,JIG,FRAME,FLOOR,COMBO,TRENCH
+Double|IdleTimeout|Machine Idle Timeout Period (0 disables)|minute(s)|0|||
+Long|TurboWebCuts|Number of Cuts Per End of TurboWeb||5|||
+Boolean|JobLoading|Enable Job Data Loading||True|||
+Boolean|Reporting|Enable Job Data Reporting||True|||
+Boolean|ShowFrameJobs|Show Framing jobs for Data Loading||True|||
+Boolean|ShowTrussJobs|Show Trussing jobs for Data Loading||True|||
+Boolean|ShowFloorJobs|Show Flooring jobs for Data Loading||True|||
+Boolean|SendStartUpMessage|Send Start-Up Message to Server||False|||
+Boolean|SendWaitForMaterialMessage|Send Wait-For-Material Message to Server||False|||
+Boolean|SendMaintenanceMessage|Send Maintenance Message to Server||False|||
+Boolean|SendOnBreakMessage|Send On-Break Message to Server||False|||
+Boolean|SendShutDownMessage|Send Shut-Down Message to Server||False|||
+Boolean|SendToFromControllerMessage|Send To-From-Controller Message to Server||False|||
+Boolean|SendLastOnLineMessage|Send Last-Online Message to Server||False|||
+Boolean|SendMachineStatus|Send Current-Machine-Status to Server||False|||
+Boolean|SendCompletionStatus|Send Completion-Status to Server||True|||
+Boolean|SendPreCompletionStatus|Send Pre-Completion-Status to Server||True|||
+String|FlipMembers|Flip These Members Vertically During Export||BC,HTC,CDTC|||
+Boolean|InterpretMemberRoles|Interpret Member Roles for Host||True|||
+String|PluginName|Name of the Plug-in||FMS Multinail Job Data Loader + Reporter|||
+String|PluginVersion|Data File Version supported by Plug-in||SOLE|||
+String|PluginAPIVersionDEV|MNM Plug-in API Version (Development)||1.6.0.0|||
+String|PluginAPIVersionRT|MNM Plug-in API Version (Runtime)||1.0.4.0|||
+String|PluginFMSVersion|Plug-in FMS Version||6.0.8.0|||
+String|PluginExtension|Plug-in Data File Extension|||||
+String|PluginCallSign|Plug-in Call Sign||FMS|||
+String|PluginAuthor|Author||Multinail Australia 2019|||
+Boolean|IncludeBirdsmouthCutting|Include Birdsmouth Cutting||False|||
+Boolean|IncludeNickCutting|Include Nick Cutting||False|||
+Boolean|PitchAdjustNickCutting|Pitch Adjust Nick Cutting||False|||
+String|MemberIdentificationListForOHNickCuts|Member Identification List for Overhang Nick Cutting||TC|||
+String|MemberIdentificationListForEXTNickCuts|Member Identification List for Extension Nick Cutting||BC|||
+Boolean|IncludeCourtesyCutting|Include Courtesy Cutting||False|||
+String|MemberIdentificationListForCOURTESYNickCuts|Member Identification List for Courtesy Nick Cutting||BOTTOM PLATE|||
+String|OpeningIdentificationListForCOURTESYNickCuts|Opening Identification List for Courtesy Nick Cutting||ID,ROBE|||
+Boolean|IncludeJobStatus|Include Job Status with Job List||False|||
+Boolean|IncludePanelOrdering|Include Panel (Stack) Ordering for Members||True|||
